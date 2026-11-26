@@ -1,0 +1,5801 @@
+{
+ "generated": "2026-11-26",
+ "sources_fetched": "2026-11-26",
+ "about": "Google Workspace REST methods mapped to Google's Workspace MCP tools. Built by an AI agent (Ford) from Google's public documentation; not affiliated with Google.",
+ "statuses": [
+  "covered",
+  "partially covered",
+  "partner access only",
+  "not available",
+  "unknown"
+ ],
+ "counts": {
+  "covered": 48,
+  "partially covered": 42,
+  "partner access only": 8,
+  "not available": 201,
+  "unknown": 8
+ },
+ "counts_by_product": {
+  "Gmail": {
+   "covered": 12,
+   "partially covered": 5,
+   "partner access only": 8,
+   "not available": 53,
+   "unknown": 1
+  },
+  "Drive": {
+   "covered": 5,
+   "partially covered": 14,
+   "partner access only": 0,
+   "not available": 43,
+   "unknown": 2
+  },
+  "Calendar": {
+   "covered": 4,
+   "partially covered": 6,
+   "partner access only": 0,
+   "not available": 27,
+   "unknown": 1
+  },
+  "Docs": {
+   "covered": 2,
+   "partially covered": 1,
+   "partner access only": 0,
+   "not available": 0,
+   "unknown": 0
+  },
+  "Sheets": {
+   "covered": 5,
+   "partially covered": 5,
+   "partner access only": 0,
+   "not available": 7,
+   "unknown": 0
+  },
+  "Slides": {
+   "covered": 5,
+   "partially covered": 0,
+   "partner access only": 0,
+   "not available": 0,
+   "unknown": 0
+  },
+  "Chat": {
+   "covered": 8,
+   "partially covered": 6,
+   "partner access only": 0,
+   "not available": 39,
+   "unknown": 3
+  },
+  "Tasks": {
+   "covered": 7,
+   "partially covered": 1,
+   "partner access only": 0,
+   "not available": 6,
+   "unknown": 0
+  },
+  "Keep": {
+   "covered": 0,
+   "partially covered": 0,
+   "partner access only": 0,
+   "not available": 7,
+   "unknown": 0
+  },
+  "People": {
+   "covered": 0,
+   "partially covered": 4,
+   "partner access only": 0,
+   "not available": 19,
+   "unknown": 1
+  }
+ },
+ "total": 307,
+ "servers": {
+  "calendar": {
+   "endpoint": "https://calendarmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/calendar/api/v3/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "create_event",
+    "delete_event",
+    "get_event",
+    "list_calendars",
+    "list_events",
+    "respond_to_event",
+    "search_events",
+    "suggest_time",
+    "update_event"
+   ],
+   "tools_documented": [
+    "create_event",
+    "delete_event",
+    "get_event",
+    "list_calendars",
+    "list_events",
+    "respond_to_event",
+    "search_events",
+    "suggest_time",
+    "update_event"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "create_event",
+    "get_event",
+    "list_calendars",
+    "list_events",
+    "respond_to_event",
+    "search_events",
+    "suggest_time",
+    "update_event"
+   ],
+   "partner_access_tools": []
+  },
+  "chat": {
+   "endpoint": "https://chatmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/chat/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "list_messages",
+    "search_conversations",
+    "search_messages",
+    "send_message"
+   ],
+   "tools_documented": [
+    "get_notification_settings",
+    "list_memberships",
+    "list_messages",
+    "mark_as_read",
+    "mark_as_unread",
+    "search_conversations",
+    "search_messages",
+    "send_message",
+    "update_notification_settings"
+   ],
+   "documented_not_live": [
+    "get_notification_settings",
+    "list_memberships",
+    "mark_as_read",
+    "mark_as_unread",
+    "update_notification_settings"
+   ],
+   "live_not_documented": [],
+   "v1self": [
+    "list_messages",
+    "search_conversations",
+    "search_messages"
+   ],
+   "partner_access_tools": []
+  },
+  "docs": {
+   "endpoint": "https://docsmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/docs/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "read_doc",
+    "update_doc"
+   ],
+   "tools_documented": [
+    "read_doc",
+    "update_doc"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "read_doc",
+    "update_doc"
+   ],
+   "partner_access_tools": []
+  },
+  "drive": {
+   "endpoint": "https://drivemcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/drive/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "copy_file",
+    "create_file",
+    "download_file_content",
+    "get_file_metadata",
+    "get_file_permissions",
+    "list_recent_files",
+    "read_file_content",
+    "search_files",
+    "upload_file_revision"
+   ],
+   "tools_documented": [
+    "copy_file",
+    "create_file",
+    "download_file_content",
+    "get_file_metadata",
+    "get_file_permissions",
+    "list_recent_files",
+    "read_file_content",
+    "search_files",
+    "upload_file_revision"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "copy_file",
+    "create_file",
+    "download_file_content",
+    "get_file_metadata",
+    "get_file_permissions",
+    "list_recent_files",
+    "read_file_content",
+    "search_files"
+   ],
+   "partner_access_tools": []
+  },
+  "gmail": {
+   "endpoint": "https://gmailmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/gmail/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "apply_sensitive_message_label",
+    "apply_sensitive_thread_label",
+    "create_draft",
+    "create_label",
+    "get_draft",
+    "get_message",
+    "get_thread",
+    "label_message",
+    "label_thread",
+    "list_drafts",
+    "list_labels",
+    "mark_message_spam",
+    "mark_thread_spam",
+    "search_threads",
+    "trash_message",
+    "trash_thread",
+    "unlabel_message",
+    "unlabel_thread",
+    "unmark_message_spam",
+    "unmark_thread_spam",
+    "untrash_message",
+    "untrash_thread",
+    "update_message_labels"
+   ],
+   "tools_documented": [
+    "apply_sensitive_message_label",
+    "apply_sensitive_thread_label",
+    "create_draft",
+    "create_label",
+    "get_draft",
+    "get_message",
+    "get_thread",
+    "label_message",
+    "label_thread",
+    "list_drafts",
+    "list_labels",
+    "mark_message_spam",
+    "mark_thread_spam",
+    "search_threads",
+    "trash_message",
+    "trash_thread",
+    "unlabel_message",
+    "unlabel_thread",
+    "unmark_message_spam",
+    "unmark_thread_spam",
+    "untrash_message",
+    "untrash_thread",
+    "update_message_labels"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "create_draft",
+    "create_label",
+    "get_draft",
+    "get_message",
+    "get_thread",
+    "label_message",
+    "label_thread",
+    "list_drafts",
+    "list_labels",
+    "mark_message_spam",
+    "mark_thread_spam",
+    "search_threads",
+    "trash_message",
+    "trash_thread",
+    "unlabel_message",
+    "unlabel_thread",
+    "unmark_message_spam",
+    "unmark_thread_spam",
+    "untrash_message",
+    "untrash_thread",
+    "update_message_labels"
+   ],
+   "partner_access_tools": [
+    "create_filter",
+    "delete_label",
+    "forward",
+    "list_filters",
+    "reply",
+    "send_message",
+    "update_draft",
+    "update_label"
+   ]
+  },
+  "people": {
+   "endpoint": "https://people.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/people/api/mcp",
+   "stage": "Developer Preview",
+   "tools_live": [
+    "get_user_profile",
+    "search_contacts",
+    "search_directory_people"
+   ],
+   "tools_documented": [
+    "get_user_profile",
+    "search_contacts",
+    "search_directory_people"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": null,
+   "partner_access_tools": []
+  },
+  "sheets": {
+   "endpoint": "https://sheetsmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/sheets/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "get_spreadsheet",
+    "get_values",
+    "insert_dimension",
+    "update_formulas",
+    "update_spreadsheet",
+    "update_values"
+   ],
+   "tools_documented": [
+    "get_spreadsheet",
+    "get_values",
+    "insert_dimension",
+    "update_formulas",
+    "update_spreadsheet",
+    "update_values"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "get_spreadsheet",
+    "get_values",
+    "insert_dimension",
+    "update_formulas",
+    "update_spreadsheet",
+    "update_values"
+   ],
+   "partner_access_tools": []
+  },
+  "slides": {
+   "endpoint": "https://slidesmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/slides/api/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "read_presentation",
+    "read_slide_page",
+    "read_slide_page_thumbnail",
+    "update_presentation"
+   ],
+   "tools_documented": [
+    "read_presentation",
+    "read_slide_page",
+    "read_slide_page_thumbnail",
+    "update_presentation"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "read_presentation",
+    "read_slide_page",
+    "read_slide_page_thumbnail",
+    "update_presentation"
+   ],
+   "partner_access_tools": []
+  },
+  "tasks": {
+   "endpoint": "https://tasksmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/tasks/reference/mcp",
+   "stage": "GA",
+   "tools_live": [
+    "complete_task",
+    "create_task",
+    "delete_task",
+    "get_task",
+    "list_task_lists",
+    "list_tasks",
+    "uncomplete_task",
+    "undelete_task",
+    "update_task"
+   ],
+   "tools_documented": [
+    "complete_task",
+    "create_task",
+    "delete_task",
+    "get_task",
+    "list_task_lists",
+    "list_tasks",
+    "uncomplete_task",
+    "undelete_task",
+    "update_task"
+   ],
+   "documented_not_live": [],
+   "live_not_documented": [],
+   "v1self": [
+    "complete_task",
+    "create_task",
+    "get_task",
+    "list_task_lists",
+    "list_tasks",
+    "uncomplete_task",
+    "undelete_task",
+    "update_task"
+   ],
+   "partner_access_tools": []
+  }
+ },
+ "quota": {
+  "mcp_standard_daily_requests_per_project_per_product": 5000,
+  "gmail_multi_request_tools": {
+   "list_drafts": 10,
+   "search_threads": 10
+  },
+  "unit_price_per_1000": {
+   "Light": 0.1,
+   "Medium": 0.2,
+   "Plus": 0.25,
+   "Premium": 0.5
+  },
+  "scaled_mcp_billed_servers": [
+   "gmail",
+   "calendar",
+   "drive"
+  ],
+  "rest_daily_no_charge": {
+   "gmail": {
+    "Light": 70000000,
+    "Medium": 10000000,
+    "Premium": 1000000
+   },
+   "calendar": {
+    "Plus": 1000000
+   },
+   "drive": {
+    "Light": 20000000,
+    "Medium": 7000000,
+    "Plus": 4000000,
+    "Premium": 1000000
+   }
+  },
+  "tool_buckets": {
+   "calendar": {
+    "create_event": "Plus",
+    "delete_event": "Plus",
+    "get_event": "Plus",
+    "list_calendars": "Plus",
+    "list_events": "Plus",
+    "respond_to_event": "Plus",
+    "search_events": "Plus",
+    "suggest_time": "Plus",
+    "update_event": "Plus"
+   },
+   "drive": {
+    "copy_file": "Medium",
+    "create_file": "Medium",
+    "download_file_content": "Premium",
+    "get_file_metadata": "Light",
+    "get_file_permissions": "Light",
+    "list_recent_files": "Plus",
+    "read_file_content": "Premium",
+    "search_files": "Plus"
+   },
+   "gmail": {
+    "apply_sensitive_message_label": "Medium",
+    "apply_sensitive_thread_label": "Premium",
+    "create_draft": "Medium",
+    "create_filter": "Medium",
+    "create_label": "Medium",
+    "delete_label": "Medium",
+    "forward": "Medium",
+    "get_draft": "Light",
+    "get_message": "Medium",
+    "get_thread": "Premium",
+    "label_message": "Medium",
+    "label_thread": "Premium",
+    "list_drafts": "Medium",
+    "list_filters": "Light",
+    "list_labels": "Light",
+    "mark_message_spam": "Medium",
+    "mark_thread_spam": "Premium",
+    "reply": "Medium",
+    "search_threads": "Premium",
+    "send_message": "Medium",
+    "trash_message": "Medium",
+    "trash_thread": "Premium",
+    "unlabel_message": "Medium",
+    "unlabel_thread": "Premium",
+    "unmark_message_spam": "Medium",
+    "unmark_thread_spam": "Premium",
+    "untrash_message": "Medium",
+    "untrash_thread": "Premium",
+    "update_draft": "Medium",
+    "update_label": "Medium",
+    "update_message_labels": "Medium"
+   }
+  },
+  "sources": [
+   "https://developers.google.com/workspace/guides/quota-usage-tiers",
+   "https://developers.google.com/workspace/guides/quota-pricing",
+   "https://developers.google.com/workspace/gmail/api/guides/quotas",
+   "https://developers.google.com/workspace/drive/api/guides/quotas",
+   "https://developers.google.com/workspace/calendar/api/guides/quotas"
+  ]
+ },
+ "rest_revisions": {
+  "calendar": "20261118",
+  "chat": "20261124",
+  "docs": "20261118",
+  "drive": "20261117",
+  "gmail": "20261116",
+  "keep": "20261116",
+  "people": "20261122",
+  "sheets": "20261118",
+  "slides": "20261118",
+  "tasks": "20261117"
+ },
+ "problems": [],
+ "methods": [
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "create_draft",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Takes to/cc/bcc/subject/body/htmlBody/attachments fields, not a raw MIME message. Use replyToMessageId for a reply draft.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No delete_draft tool in the reference, the live tool list or the quota table, although the approval guide names \"deleting a draft\" as a sensitive Gmail action.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts/{id}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "get_draft",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "list_drafts",
+     "daily_requests_per_call": 10,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Counts as 10 requests per call toward the daily limit.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.send",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts/send",
+   "status": "unknown",
+   "tools": [],
+   "note": "No generally available tool sends an existing draft. send_message is partner access only, and Google does not publish whether it accepts a draft id.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.drafts.update",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/drafts/{id}",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "update_draft",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "update_draft \"require[s] partner access\". Generally available fallback: create a new draft.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.getProfile",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/profile",
+   "status": "not available",
+   "tools": [],
+   "note": "No Gmail tool. The People server's get_user_profile (Developer Preview) returns name and email only.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.history.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/history",
+   "status": "not available",
+   "tools": [],
+   "note": "No sync or history tool. An agent that keeps a local mirror of the mailbox has no MCP path.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "create_label",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels/{id}",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "delete_label",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "delete_label \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels/{id}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "list_labels",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-label lookup; list all labels and filter. Per-label message counts are not documented.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "list_labels",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.patch",
+   "http": "PATCH",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels/{id}",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "update_label",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "update_label \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.labels.update",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/labels/{id}",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "update_label",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "update_label \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.attachments.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{messageId}/attachments/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No published tool returns attachment bytes; get_message returns attachment metadata (filename, MIME type, id) only.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.batchDelete",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/batchDelete",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. Google: \"Moving items to the trash always requires per-call confirmation ... and permanent deletion is blocked for third-party agents.\"",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.batchModify",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/batchModify",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "update_message_labels",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "gmail",
+     "tool": "label_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "gmail",
+     "tool": "unlabel_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No batch tool: one call per message or per thread, each counting as a request.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. Google: \"Moving items to the trash always requires per-call confirmation ... and permanent deletion is blocked for third-party agents.\"",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{id}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "get_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No raw RFC 822 format (formats: PLAIN_TEXT, FULL_CONTENT, MINIMAL, METADATA_ONLY). Does not return drafts. Attachment metadata only.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.import",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/import",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.insert",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "search_threads",
+     "daily_requests_per_call": 10,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Returns threads (each with up to 5 message summaries), not a flat message list. Counts as 10 requests per call toward the daily limit.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.modify",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{id}/modify",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "update_message_labels",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "gmail",
+     "tool": "label_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "gmail",
+     "tool": "unlabel_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Trash and Spam labels go through trash_message / mark_message_spam instead.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.send",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/send",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "send_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    },
+    {
+     "server": "gmail",
+     "tool": "reply",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    },
+    {
+     "server": "gmail",
+     "tool": "forward",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "send_message, reply and forward \"require partner access and aren't generally available\". Generally available fallback: create_draft, and the user sends it from Gmail.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.trash",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{id}/trash",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "trash_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Always asks the user to confirm each call.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.messages.untrash",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/{id}/untrash",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "untrash_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Does not return the message to the Inbox; add the INBOX label separately.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.identities.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/identities",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.identities.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/identities/{cseEmailAddress}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.identities.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/identities/{cseEmailAddress}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.identities.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/identities",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.identities.patch",
+   "http": "PATCH",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/identities/{emailAddress}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.disable",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:disable",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.enable",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:enable",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.cse.keypairs.obliterate",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:obliterate",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.delegates.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/delegates",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.delegates.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/delegates/{delegateEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.delegates.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/delegates/{delegateEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.delegates.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/delegates",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.filters.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/filters",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "create_filter",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "create_filter \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.filters.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/filters/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool, not even in the partner-access list.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.filters.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/filters/{id}",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "list_filters",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "Only through list_filters, which \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.filters.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/filters",
+   "status": "partner access only",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "list_filters",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": false,
+     "partner_access": true
+    }
+   ],
+   "note": "list_filters \"require[s] partner access\".",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.forwardingAddresses.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/forwardingAddresses",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.forwardingAddresses.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/forwardingAddresses/{forwardingEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.forwardingAddresses.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/forwardingAddresses/{forwardingEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.forwardingAddresses.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/forwardingAddresses",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.getAutoForwarding",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/autoForwarding",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.getImap",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/imap",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.getLanguage",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/language",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.getPop",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/pop",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.getVacation",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/vacation",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.create",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.patch",
+   "http": "PATCH",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.smimeInfo.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.smimeInfo.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.smimeInfo.insert",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.smimeInfo.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.smimeInfo.setDefault",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}/setDefault",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.update",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.sendAs.verify",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/verify",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.updateAutoForwarding",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/autoForwarding",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.updateImap",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/imap",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.updateLanguage",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/language",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.updatePop",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/pop",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.settings.updateVacation",
+   "http": "PUT",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/settings/vacation",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool: the Gmail MCP server has no tools for account settings.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.stop",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/stop",
+   "status": "not available",
+   "tools": [],
+   "note": "No push-notification tool.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.delete",
+   "http": "DELETE",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads/{id}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. Google: \"Moving items to the trash always requires per-call confirmation ... and permanent deletion is blocked for third-party agents.\"",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.get",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads/{id}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "get_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Draft messages in the thread are omitted; no raw format.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.list",
+   "http": "GET",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "search_threads",
+     "daily_requests_per_call": 10,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Counts as 10 requests per call toward the daily limit.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.modify",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads/{id}/modify",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "label_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "gmail",
+     "tool": "unlabel_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.trash",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads/{id}/trash",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "trash_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Always asks the user to confirm each call.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.threads.untrash",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/threads/{id}/untrash",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "gmail",
+     "tool": "untrash_thread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp",
+    "https://developers.google.com/workspace/gmail/api/guides/quotas"
+   ]
+  },
+  {
+   "api": "gmail",
+   "product": "Gmail",
+   "method": "gmail.users.watch",
+   "http": "POST",
+   "path": "https://gmail.googleapis.com/gmail/v1/users/{userId}/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No push-notification tool. An agent woken by Pub/Sub on new mail has no MCP path.",
+   "sources": [
+    "https://developers.google.com/workspace/gmail/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.about.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/about",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.accessproposals.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/accessproposals/{proposalId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.accessproposals.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/accessproposals",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.accessproposals.resolve",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/accessproposals/{proposalId}:resolve",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.approve",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}:approve",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.cancel",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}:cancel",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.comment",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}:comment",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.decline",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}:decline",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.reassign",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals/{approvalId}:reassign",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.approvals.start",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/approvals:start",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.apps.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/apps/{appId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.apps.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/apps",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.changes.getStartPageToken",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/changes/startPageToken",
+   "status": "not available",
+   "tools": [],
+   "note": "No change-feed tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.changes.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/changes",
+   "status": "not available",
+   "tools": [],
+   "note": "No change-feed tool. An agent that syncs or indexes a Drive incrementally has no MCP path.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.changes.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/changes/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No change-notification tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.channels.stop",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/channels/stop",
+   "status": "not available",
+   "tools": [],
+   "note": "No change-notification tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.comments.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Only on Docs, Sheets and Slides files, as an insertComment request through update_doc / update_spreadsheet / update_presentation. No tool for comments on other file types.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.comments.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Only on Docs, Sheets and Slides files, as an deleteComment request through update_doc / update_spreadsheet / update_presentation. No tool for comments on other file types.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.comments.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "read_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Comments come back inside read_file_content (includeComments) or read_doc / get_spreadsheet / read_presentation (commentsIncluded); no standalone comment lookup.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.comments.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "read_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "docs",
+     "tool": "read_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "get_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "read_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Comments come back inside read_file_content (includeComments) or read_doc / get_spreadsheet / read_presentation (commentsIncluded); no standalone comment lookup.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.comments.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Only on Docs, Sheets and Slides files, as an updateCommentPost request through update_doc / update_spreadsheet / update_presentation. No tool for comments on other file types.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/drives",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/drives/{driveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/drives/{driveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.hide",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/drives/{driveId}/hide",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/drives",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.unhide",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/drives/{driveId}/unhide",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.drives.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/drives/{driveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.copy",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/copy",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "copy_file",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Title and parent folder only.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "create_file",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Content goes inline (textContent or base64Content); no resumable or multipart upload. Folders via the folder MIME type. Not every metadata field can be set.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. Google: \"Moving items to the trash always requires per-call confirmation ... and permanent deletion is blocked for third-party agents.\" There is no Drive trash tool either.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.download",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/download",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "download_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Returned inline as base64, not as a long-running operation.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.emptyTrash",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/trash",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. Google: \"Moving items to the trash always requires per-call confirmation ... and permanent deletion is blocked for third-party agents.\"",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/guides/mcp-elicitation"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.export",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/export",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "download_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "drive",
+     "tool": "read_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Set exportMimeType; read_file_content gives a plain-language rendering that \"may be incomplete for very large files\".",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.generateCseToken",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/generateCseToken",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.generateIds",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/generateIds",
+   "status": "unknown",
+   "tools": [],
+   "note": "create_file's description mentions ids \"obtained from `generate_ids`\", but no generate_ids tool appears in the published tool list.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "get_file_metadata",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "drive",
+     "tool": "download_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Metadata via get_file_metadata; bytes (alt=media) via download_file_content as base64.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "search_files",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "drive",
+     "tool": "list_recent_files",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Different query language: \"Only terms in this list are supported\". No `fields` mask; results carry content snippets unless excluded.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.listLabels",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/listLabels",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.modifyLabels",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/modifyLabels",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "upload_file_revision",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Only new content for an existing non-Google-format file. Rename, move (addParents/removeParents), trash, star and every other metadata change have no tool. upload_file_revision is not on /mcp/v1self.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.files.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No change-notification tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.operations.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/operations/{name}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.permissions.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/permissions",
+   "status": "not available",
+   "tools": [],
+   "note": "No share tool: an agent cannot share a file or folder through the Drive MCP server.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.permissions.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/permissions/{permissionId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No unshare tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.permissions.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/permissions/{permissionId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "get_file_permissions",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Lists every permission on the file; no single-permission lookup.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.permissions.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/permissions",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "get_file_permissions",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Light",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.permissions.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/permissions/{permissionId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No share tool.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.replies.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}/replies",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Only on Docs, Sheets and Slides files, as an addCommentReply request through update_doc / update_spreadsheet / update_presentation. No tool for comments on other file types.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.replies.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Only on Docs, Sheets and Slides files, as an deleteCommentReply request through update_doc / update_spreadsheet / update_presentation. No tool for comments on other file types.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp",
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.replies.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "read_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Comments come back inside read_file_content (includeComments) or read_doc / get_spreadsheet / read_presentation (commentsIncluded); no standalone comment lookup.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.replies.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}/replies",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "read_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Comments come back inside read_file_content (includeComments) or read_doc / get_spreadsheet / read_presentation (commentsIncluded); no standalone comment lookup.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.replies.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/comments/{commentId}/replies/{replyId}",
+   "status": "unknown",
+   "tools": [],
+   "note": "updateCommentPost exists for Docs, Sheets and Slides; whether it edits replies is not stated.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.revisions.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/revisions/{revisionId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.revisions.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/revisions/{revisionId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "download_file_content",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Premium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Revision content by revisionId only; no revision metadata, and no tool lists revision ids.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.revisions.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/revisions",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.revisions.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/files/{fileId}/revisions/{revisionId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.teamdrives.create",
+   "http": "POST",
+   "path": "https://www.googleapis.com/drive/v3/teamdrives",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.teamdrives.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/drive/v3/teamdrives/{teamDriveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.teamdrives.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/teamdrives/{teamDriveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.teamdrives.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/drive/v3/teamdrives",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "drive",
+   "product": "Drive",
+   "method": "drive.teamdrives.update",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/drive/v3/teamdrives/{teamDriveId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl/{ruleId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl/{ruleId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.insert",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.patch",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl/{ruleId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.update",
+   "http": "PUT",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl/{ruleId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.acl.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/acl/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList/{calendarId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "list_calendars",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-calendar lookup; list and filter. \"returns a subset of all accessible calendars\".",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.insert",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "list_calendars",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"This tool returns a subset of all accessible calendars\".",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.patch",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.update",
+   "http": "PUT",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendarList.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/calendarList/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.clear",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/clear",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "list_calendars",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-calendar lookup; list and filter.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.insert",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.patch",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.transferOwnership",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/transferOwnership",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.calendars.update",
+   "http": "PUT",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.channels.stop",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/channels/stop",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.colors.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/colors",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.delete",
+   "http": "DELETE",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "delete_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Not on /mcp/v1self. Costs 10 query units against the per-minute quota.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "get_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.import",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/import",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.insert",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "create_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.instances",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}/instances",
+   "status": "unknown",
+   "tools": [],
+   "note": "Not stated whether list_events expands recurring events into instances.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "list_events",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "calendar",
+     "tool": "search_events",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "search_events is semantic search on the primary calendar only.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.move",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}/move",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool moves an event to another calendar.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.patch",
+   "http": "PATCH",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "update_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "calendar",
+     "tool": "respond_to_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "update_event's input schema has no recurrence field (create_event has recurrenceData). RSVP changes go through respond_to_event.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.quickAdd",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/quickAdd",
+   "status": "not available",
+   "tools": [],
+   "note": "No free-text add tool; build the event fields and call create_event.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.update",
+   "http": "PUT",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/{eventId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "update_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "calendar",
+     "tool": "respond_to_event",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "update_event's input schema has no recurrence field (create_event has recurrenceData). RSVP changes go through respond_to_event.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.events.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/calendars/{calendarId}/events/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No push-notification tool.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.freebusy.query",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/freeBusy",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "calendar",
+     "tool": "suggest_time",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Plus",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Returns suggested time periods across calendars, not the raw busy intervals.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.settings.get",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/settings/{setting}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.settings.list",
+   "http": "GET",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/settings",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "calendar",
+   "product": "Calendar",
+   "method": "calendar.settings.watch",
+   "http": "POST",
+   "path": "https://www.googleapis.com/calendar/v3/users/me/settings/watch",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/calendar/api/v3/reference/mcp"
+   ]
+  },
+  {
+   "api": "docs",
+   "product": "Docs",
+   "method": "docs.documents.batchUpdate",
+   "http": "POST",
+   "path": "https://docs.googleapis.com/v1/documents/{documentId}:batchUpdate",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "update_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Accepts 48 of the 53 REST request types. Not listed: createDropdownDefinition, deleteDropdownDefinition, insertDropdown, updateDropdownDefinitionProperties, updateDropdownProperties.",
+   "sources": [
+    "https://developers.google.com/workspace/docs/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "docs",
+   "product": "Docs",
+   "method": "docs.documents.create",
+   "http": "POST",
+   "path": "https://docs.googleapis.com/v1/documents",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "create_file",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "On the Drive server: create_file with mimeType application/vnd.google-apps.document (counts against Drive's quota).",
+   "sources": [
+    "https://developers.google.com/workspace/docs/api/reference/mcp",
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "docs",
+   "product": "Docs",
+   "method": "docs.documents.get",
+   "http": "GET",
+   "path": "https://docs.googleapis.com/v1/documents/{documentId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "docs",
+     "tool": "read_doc",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to documents.get in the REST API.\"",
+   "sources": [
+    "https://developers.google.com/workspace/docs/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.batchUpdate",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}:batchUpdate",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "insert_dimension",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "The tool lists all 74 REST request types.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.create",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "create_file",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "On the Drive server: create_file with mimeType application/vnd.google-apps.spreadsheet (counts against Drive's quota).",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp",
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.developerMetadata.get",
+   "http": "GET",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/developerMetadata/{metadataId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.developerMetadata.search",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/developerMetadata:search",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.get",
+   "http": "GET",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "get_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to spreadsheets.get in the REST API\".",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.getByDataFilter",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}:getByDataFilter",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.sheets.copyTo",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/sheets/{sheetId}:copyTo",
+   "status": "not available",
+   "tools": [],
+   "note": "duplicateSheet (through update_spreadsheet) copies within one spreadsheet only; no tool copies a sheet to another spreadsheet.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.append",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}:append",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_values",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No append tool: send an appendCells request through update_spreadsheet, or find the next row and call update_values. The automatic table detection of values.append is lost.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchClear",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchClear",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No clear tool: updateCells requests through update_spreadsheet.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchClearByDataFilter",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchClearByDataFilter",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchGet",
+   "http": "GET",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchGet",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "get_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "get_values",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No batch tool: get_spreadsheet with ranges, or one get_values call per range (each a request).",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchGetByDataFilter",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchGetByDataFilter",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchUpdate",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchUpdate",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_values",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No batch tool: one update_values call per range (each a request), or updateCells requests through update_spreadsheet.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.batchUpdateByDataFilter",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values:batchUpdateByDataFilter",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.clear",
+   "http": "POST",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}:clear",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_spreadsheet",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No clear tool: express it as an updateCells request through update_spreadsheet.",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.get",
+   "http": "GET",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "get_values",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to spreadsheets.values.get in the REST API\".",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "sheets",
+   "product": "Sheets",
+   "method": "sheets.spreadsheets.values.update",
+   "http": "PUT",
+   "path": "https://sheets.googleapis.com/v4/spreadsheets/{spreadsheetId}/values/{range}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "sheets",
+     "tool": "update_values",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "sheets",
+     "tool": "update_formulas",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to spreadsheets.values.update in the REST API\".",
+   "sources": [
+    "https://developers.google.com/workspace/sheets/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "slides",
+   "product": "Slides",
+   "method": "slides.presentations.batchUpdate",
+   "http": "POST",
+   "path": "https://slides.googleapis.com/v1/presentations/{presentationId}:batchUpdate",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "slides",
+     "tool": "update_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "The tool lists all 49 REST request types.",
+   "sources": [
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "slides",
+   "product": "Slides",
+   "method": "slides.presentations.create",
+   "http": "POST",
+   "path": "https://slides.googleapis.com/v1/presentations",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "drive",
+     "tool": "create_file",
+     "daily_requests_per_call": 1,
+     "billing_bucket": "Medium",
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "On the Drive server: create_file with mimeType application/vnd.google-apps.presentation (counts against Drive's quota).",
+   "sources": [
+    "https://developers.google.com/workspace/slides/api/reference/mcp",
+    "https://developers.google.com/workspace/drive/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "slides",
+   "product": "Slides",
+   "method": "slides.presentations.get",
+   "http": "GET",
+   "path": "https://slides.googleapis.com/v1/presentations/{presentationsId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "slides",
+     "tool": "read_presentation",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to presentations.get in the REST API.\"",
+   "sources": [
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "slides",
+   "product": "Slides",
+   "method": "slides.presentations.pages.get",
+   "http": "GET",
+   "path": "https://slides.googleapis.com/v1/presentations/{presentationId}/pages/{pageObjectId}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "slides",
+     "tool": "read_slide_page",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to presentations.pages.get in the REST API.\"",
+   "sources": [
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "slides",
+   "product": "Slides",
+   "method": "slides.presentations.pages.getThumbnail",
+   "http": "GET",
+   "path": "https://slides.googleapis.com/v1/presentations/{presentationId}/pages/{pageObjectId}/thumbnail",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "slides",
+     "tool": "read_slide_page_thumbnail",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "\"Corresponds to presentations.pages.getThumbnail in the REST API.\"",
+   "sources": [
+    "https://developers.google.com/workspace/slides/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.customEmojis.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/customEmojis",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.customEmojis.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/customEmojis/{customEmojisId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.customEmojis.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/customEmojis/{customEmojisId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.customEmojis.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/customEmojis",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.media.download",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/media/{mediaId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.media.upload",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/attachments:upload",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.completeImport",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}:completeImport",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.findDirectMessage",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces:findDirectMessage",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_conversations",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Search by participant email.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.findGroupChats",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces:findGroupChats",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_conversations",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Search by participant emails.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_conversations",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No lookup by space name id; search and filter.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_conversations",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "By space display name or participant emails only; no plain listing of every space.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.members.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/members",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.members.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/members/{membersId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.members.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/members/{membersId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "list_memberships",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-member lookup; list and filter.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.members.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/members",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "list_memberships",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Documented on the reference page; not returned by an uncredentialled tools/list call on 2026-11-26.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.members.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/members/{membersId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messagePins.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messagePins",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messagePins.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messagePins/{messagePinsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messagePins.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messagePins",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.attachments.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}/attachments/{attachmentsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "send_message",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Needs a configured Chat app in the Cloud project. Not on /mcp/v1self.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "list_messages",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "chat",
+     "tool": "search_messages",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-message lookup; list or search and filter.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "list_messages",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Returned as Markdown; \"Private messages (messages only visible to a single user) are filtered out.\"",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.reactions.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}/reactions",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.reactions.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}/reactions/{reactionsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.reactions.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}/reactions",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.replaceCards",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}:replaceCards",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.search",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages:search",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_messages",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.messages.update",
+   "http": "PUT",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/messages/{messagesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.search",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces:search",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "search_conversations",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "By space display name or participant emails only.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.setup",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/spaces:setup",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.spaceEvents.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/spaceEvents/{spaceEventsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.spaces.spaceEvents.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/spaces/{spacesId}/spaceEvents",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.availability.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/availability",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.availability.markAsActive",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/availability:markAsActive",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.availability.markAsAway",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/availability:markAsAway",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.availability.markAsDoNotDisturb",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/availability:markAsDoNotDisturb",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.availability.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/availability",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.create",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.delete",
+   "http": "DELETE",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections/{sectionsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.items.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections/{sectionsId}/items",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.items.move",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections/{sectionsId}/items/{itemsId}:move",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.list",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections/{sectionsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.sections.position",
+   "http": "POST",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/sections/{sectionsId}:position",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.getSpaceReadState",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/spaceReadState",
+   "status": "unknown",
+   "tools": [],
+   "note": "No read-state lookup tool is listed; whether search_messages' unread filter is a full substitute is not stated.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.spaceNotificationSetting.get",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/spaceNotificationSetting",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "get_notification_settings",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Documented on the reference page; not returned by an uncredentialled tools/list call on 2026-11-26.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.spaceNotificationSetting.patch",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/spaceNotificationSetting",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "update_notification_settings",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Documented on the reference page; not returned by an uncredentialled tools/list call on 2026-11-26.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.threads.getThreadReadState",
+   "http": "GET",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/threads/{threadsId}/threadReadState",
+   "status": "unknown",
+   "tools": [],
+   "note": "mark_as_read / mark_as_unread are documented but their input schema was not readable without credentials.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.threads.updateThreadReadState",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/threads/{threadsId}/threadReadState",
+   "status": "unknown",
+   "tools": [],
+   "note": "mark_as_read / mark_as_unread are documented but their input schema was not readable without credentials.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "chat",
+   "product": "Chat",
+   "method": "chat.users.spaces.updateSpaceReadState",
+   "http": "PATCH",
+   "path": "https://chat.googleapis.com/v1/users/{usersId}/spaces/{spacesId}/spaceReadState",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "chat",
+     "tool": "mark_as_read",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    },
+    {
+     "server": "chat",
+     "tool": "mark_as_unread",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Documented on the reference page; not returned by an uncredentialled tools/list call on 2026-11-26.",
+   "sources": [
+    "https://developers.google.com/workspace/chat/api/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.delete",
+   "http": "DELETE",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists/{tasklist}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.get",
+   "http": "GET",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists/{tasklist}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "list_task_lists",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "No single-list lookup; list and filter.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.insert",
+   "http": "POST",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.list",
+   "http": "GET",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "list_task_lists",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.patch",
+   "http": "PATCH",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists/{tasklist}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasklists.update",
+   "http": "PUT",
+   "path": "https://tasks.googleapis.com/tasks/v1/users/@me/lists/{tasklist}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.clear",
+   "http": "POST",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/clear",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool in Google's published tool list for this server does this.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.delete",
+   "http": "DELETE",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks/{task}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "delete_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": false,
+     "partner_access": false
+    }
+   ],
+   "note": "Not on /mcp/v1self.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.get",
+   "http": "GET",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks/{task}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "get_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "By task id alone.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.insert",
+   "http": "POST",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "create_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.list",
+   "http": "GET",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "list_tasks",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.move",
+   "http": "POST",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks/{task}/move",
+   "status": "not available",
+   "tools": [],
+   "note": "No move or reorder tool; update_task's input schema has no parent, position or list field.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.patch",
+   "http": "PATCH",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks/{task}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "update_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "tasks",
+     "tool": "complete_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "tasks",
+     "tool": "uncomplete_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Completion status changes go through complete_task / uncomplete_task.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "tasks",
+   "product": "Tasks",
+   "method": "tasks.tasks.update",
+   "http": "PUT",
+   "path": "https://tasks.googleapis.com/tasks/v1/lists/{tasklist}/tasks/{task}",
+   "status": "covered",
+   "tools": [
+    {
+     "server": "tasks",
+     "tool": "update_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "tasks",
+     "tool": "complete_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    },
+    {
+     "server": "tasks",
+     "tool": "uncomplete_task",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": true,
+     "partner_access": false
+    }
+   ],
+   "note": "Completion status changes go through complete_task / uncomplete_task.",
+   "sources": [
+    "https://developers.google.com/workspace/tasks/reference/mcp"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.media.download",
+   "http": "GET",
+   "path": "https://keep.googleapis.com/v1/notes/{notesId}/attachments/{attachmentsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.create",
+   "http": "POST",
+   "path": "https://keep.googleapis.com/v1/notes",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.delete",
+   "http": "DELETE",
+   "path": "https://keep.googleapis.com/v1/notes/{notesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.get",
+   "http": "GET",
+   "path": "https://keep.googleapis.com/v1/notes/{notesId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.list",
+   "http": "GET",
+   "path": "https://keep.googleapis.com/v1/notes",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.permissions.batchCreate",
+   "http": "POST",
+   "path": "https://keep.googleapis.com/v1/notes/{notesId}/permissions:batchCreate",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "keep",
+   "product": "Keep",
+   "method": "keep.notes.permissions.batchDelete",
+   "http": "POST",
+   "path": "https://keep.googleapis.com/v1/notes/{notesId}/permissions:batchDelete",
+   "status": "not available",
+   "tools": [],
+   "note": "No Keep MCP server is published. Google's 24 Nov 2026 post lists the GA servers \"(with Keep coming soon)\"; no date given.",
+   "sources": [
+    "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.batchGet",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/contactGroups:batchGet",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.create",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/contactGroups",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.delete",
+   "http": "DELETE",
+   "path": "https://people.googleapis.com/v1/contactGroups/{contactGroupsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.get",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/contactGroups/{contactGroupsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.list",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/contactGroups",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.members.modify",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/contactGroups/{contactGroupsId}/members:modify",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.contactGroups.update",
+   "http": "PUT",
+   "path": "https://people.googleapis.com/v1/contactGroups/{contactGroupsId}",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.otherContacts.copyOtherContactToMyContactsGroup",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/otherContacts/{otherContactsId}:copyOtherContactToMyContactsGroup",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.otherContacts.list",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/otherContacts",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.otherContacts.search",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/otherContacts:search",
+   "status": "unknown",
+   "tools": [],
+   "note": "Not stated whether search_contacts (Developer Preview) includes \"other contacts\".",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.batchCreateContacts",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/people:batchCreateContacts",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.batchDeleteContacts",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/people:batchDeleteContacts",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.batchUpdateContacts",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/people:batchUpdateContacts",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.connections.list",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}/connections",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.createContact",
+   "http": "POST",
+   "path": "https://people.googleapis.com/v1/people:createContact",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.deleteContact",
+   "http": "DELETE",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}:deleteContact",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.deleteContactPhoto",
+   "http": "DELETE",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}:deleteContactPhoto",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.get",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "people",
+     "tool": "get_user_profile",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": null,
+     "partner_access": false
+    }
+   ],
+   "note": "Developer Preview only: needs membership of the Google Workspace Developer Preview Program; not generally available. Only the signed-in user's own name and email.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.getBatchGet",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people:batchGet",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.listDirectoryPeople",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people:listDirectoryPeople",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "people",
+     "tool": "search_directory_people",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": null,
+     "partner_access": false
+    }
+   ],
+   "note": "Developer Preview only: needs membership of the Google Workspace Developer Preview Program; not generally available. Search only, no full listing.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.searchContacts",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people:searchContacts",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "people",
+     "tool": "search_contacts",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": null,
+     "partner_access": false
+    }
+   ],
+   "note": "Developer Preview only: needs membership of the Google Workspace Developer Preview Program; not generally available.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.searchDirectoryPeople",
+   "http": "GET",
+   "path": "https://people.googleapis.com/v1/people:searchDirectoryPeople",
+   "status": "partially covered",
+   "tools": [
+    {
+     "server": "people",
+     "tool": "search_directory_people",
+     "daily_requests_per_call": 1,
+     "billing_bucket": null,
+     "on_v1self": null,
+     "partner_access": false
+    }
+   ],
+   "note": "Developer Preview only: needs membership of the Google Workspace Developer Preview Program; not generally available. Workspace accounts only.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.updateContact",
+   "http": "PATCH",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}:updateContact",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  },
+  {
+   "api": "people",
+   "product": "People",
+   "method": "people.people.updateContactPhoto",
+   "http": "PATCH",
+   "path": "https://people.googleapis.com/v1/people/{peopleId}:updateContactPhoto",
+   "status": "not available",
+   "tools": [],
+   "note": "No tool. The People MCP server (Developer Preview) has three read-only tools: search_contacts, search_directory_people, get_user_profile.",
+   "sources": [
+    "https://developers.google.com/people/api/mcp",
+    "https://developers.google.com/workspace/guides/configure-mcp-servers#support-products"
+   ]
+  }
+ ]
+}

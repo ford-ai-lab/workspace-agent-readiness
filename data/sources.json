@@ -1,0 +1,3404 @@
+{
+ "batch_requests": {
+  "docs": [
+   "acceptSuggestion",
+   "addCommentReply",
+   "addDocumentTab",
+   "createDropdownDefinition",
+   "createFooter",
+   "createFootnote",
+   "createHeader",
+   "createNamedRange",
+   "createParagraphBullets",
+   "deleteComment",
+   "deleteCommentReply",
+   "deleteContentRange",
+   "deleteDropdownDefinition",
+   "deleteFooter",
+   "deleteHeader",
+   "deleteNamedRange",
+   "deleteParagraphBullets",
+   "deletePositionedObject",
+   "deleteSuggestion",
+   "deleteTab",
+   "deleteTableColumn",
+   "deleteTableRow",
+   "insertComment",
+   "insertDate",
+   "insertDropdown",
+   "insertInlineImage",
+   "insertPageBreak",
+   "insertPerson",
+   "insertRichLink",
+   "insertSectionBreak",
+   "insertTable",
+   "insertTableColumn",
+   "insertTableRow",
+   "insertText",
+   "mergeTableCells",
+   "pinTableHeaderRows",
+   "rejectSuggestion",
+   "replaceAllText",
+   "replaceImage",
+   "replaceNamedRangeContent",
+   "unmergeTableCells",
+   "updateCommentPost",
+   "updateDocumentStyle",
+   "updateDocumentTabProperties",
+   "updateDropdownDefinitionProperties",
+   "updateDropdownProperties",
+   "updateNamedStyle",
+   "updateParagraphStyle",
+   "updateSectionStyle",
+   "updateTableCellStyle",
+   "updateTableColumnProperties",
+   "updateTableRowStyle",
+   "updateTextStyle"
+  ],
+  "sheets": [
+   "addBanding",
+   "addChart",
+   "addCommentReply",
+   "addConditionalFormatRule",
+   "addDataSource",
+   "addDimensionGroup",
+   "addFilterView",
+   "addNamedRange",
+   "addProtectedRange",
+   "addSheet",
+   "addSlicer",
+   "addTable",
+   "appendCells",
+   "appendDimension",
+   "autoFill",
+   "autoResizeDimensions",
+   "cancelDataSourceRefresh",
+   "clearBasicFilter",
+   "copyPaste",
+   "createDeveloperMetadata",
+   "cutPaste",
+   "deleteBanding",
+   "deleteComment",
+   "deleteCommentReply",
+   "deleteConditionalFormatRule",
+   "deleteDataSource",
+   "deleteDeveloperMetadata",
+   "deleteDimension",
+   "deleteDimensionGroup",
+   "deleteDuplicates",
+   "deleteEmbeddedObject",
+   "deleteFilterView",
+   "deleteNamedRange",
+   "deleteProtectedRange",
+   "deleteRange",
+   "deleteSheet",
+   "deleteTable",
+   "duplicateFilterView",
+   "duplicateSheet",
+   "findReplace",
+   "insertComment",
+   "insertDimension",
+   "insertRange",
+   "mergeCells",
+   "moveDimension",
+   "pasteData",
+   "randomizeRange",
+   "refreshDataSource",
+   "repeatCell",
+   "setBasicFilter",
+   "setDataValidation",
+   "sortRange",
+   "textToColumns",
+   "trimWhitespace",
+   "unmergeCells",
+   "updateBanding",
+   "updateBorders",
+   "updateCells",
+   "updateChartSpec",
+   "updateCommentPost",
+   "updateConditionalFormatRule",
+   "updateDataSource",
+   "updateDeveloperMetadata",
+   "updateDimensionGroup",
+   "updateDimensionProperties",
+   "updateEmbeddedObjectBorder",
+   "updateEmbeddedObjectPosition",
+   "updateFilterView",
+   "updateNamedRange",
+   "updateProtectedRange",
+   "updateSheetProperties",
+   "updateSlicerSpec",
+   "updateSpreadsheetProperties",
+   "updateTable"
+  ],
+  "slides": [
+   "addCommentReply",
+   "createImage",
+   "createLine",
+   "createParagraphBullets",
+   "createShape",
+   "createSheetsChart",
+   "createSlide",
+   "createTable",
+   "createVideo",
+   "deleteComment",
+   "deleteCommentReply",
+   "deleteObject",
+   "deleteParagraphBullets",
+   "deleteTableColumn",
+   "deleteTableRow",
+   "deleteText",
+   "duplicateObject",
+   "groupObjects",
+   "insertComment",
+   "insertTableColumns",
+   "insertTableRows",
+   "insertText",
+   "mergeTableCells",
+   "refreshSheetsChart",
+   "replaceAllShapesWithImage",
+   "replaceAllShapesWithSheetsChart",
+   "replaceAllText",
+   "replaceImage",
+   "rerouteLine",
+   "ungroupObjects",
+   "unmergeTableCells",
+   "updateCommentPost",
+   "updateImageProperties",
+   "updateLineCategory",
+   "updateLineProperties",
+   "updatePageElementAltText",
+   "updatePageElementTransform",
+   "updatePageElementsZOrder",
+   "updatePageProperties",
+   "updateParagraphStyle",
+   "updateShapeProperties",
+   "updateSlideProperties",
+   "updateSlidesPosition",
+   "updateTableBorderProperties",
+   "updateTableCellProperties",
+   "updateTableColumnProperties",
+   "updateTableRowProperties",
+   "updateTextStyle",
+   "updateVideoProperties"
+  ]
+ },
+ "fetched": "2026-11-26",
+ "mcp": {
+  "calendar": {
+   "documented": [
+    "create_event",
+    "delete_event",
+    "get_event",
+    "list_calendars",
+    "list_events",
+    "respond_to_event",
+    "search_events",
+    "suggest_time",
+    "update_event"
+   ],
+   "endpoint": "https://calendarmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/calendar/api/v3/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_events",
+     "params": [
+      "calendarId",
+      "endTime",
+      "eventType",
+      "eventTypeFilter",
+      "fullText",
+      "orderBy",
+      "pageSize",
+      "pageToken",
+      "startTime",
+      "timeZone"
+     ],
+     "read_only": true,
+     "summary": "Returns events on the given calendar matching all specified constraints. Time constraints should not be specified unless requested by the user. For open-ended keyword or topic-based searches on the primary calendar, the search_events tool m"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_event",
+     "params": [
+      "calendarId",
+      "eventId"
+     ],
+     "read_only": true,
+     "summary": "Returns a single event on the given calendar."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_calendars",
+     "params": [
+      "pageSize",
+      "pageToken"
+     ],
+     "read_only": true,
+     "summary": "Returns the calendars this user owns or has subscribed to. These are the calendars that show up in the calendar list if the user opens Google Calendar. This tool returns a subset of all accessible calendars; other calendars shared with the "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "suggest_time",
+     "params": [
+      "attendeeEmails",
+      "durationMinutes",
+      "endTime",
+      "preferences",
+      "startTime",
+      "timeZone"
+     ],
+     "read_only": true,
+     "summary": "Suggests time periods across one or more calendars."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "create_event",
+     "params": [
+      "addGoogleMeetUrl",
+      "allDay",
+      "attachments",
+      "attendeeEmails",
+      "attendees",
+      "availability",
+      "calendarId",
+      "colorId",
+      "description",
+      "endTime",
+      "eventType",
+      "googleMeetUrl",
+      "guestPermissions",
+      "location",
+      "notificationLevel",
+      "overrideReminders",
+      "recurrenceData",
+      "startTime",
+      "summary",
+      "timeZone",
+      "useDefaultReminders",
+      "visibility",
+      "workingLocationProperties"
+     ],
+     "read_only": false,
+     "summary": "Creates an event on the given calendar."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "update_event",
+     "params": [
+      "addGoogleMeetUrl",
+      "addedAttachments",
+      "addedAttendeeEmails",
+      "addedAttendees",
+      "allDay",
+      "availability",
+      "calendarId",
+      "colorId",
+      "description",
+      "endTime",
+      "eventId",
+      "googleMeetUrl",
+      "guestPermissions",
+      "location",
+      "notificationLevel",
+      "overrideReminders",
+      "removedAttachmentFileUrls",
+      "removedAttendeeEmails",
+      "startTime",
+      "summary",
+      "timeZone",
+      "useDefaultReminders",
+      "visibility"
+     ],
+     "read_only": false,
+     "summary": "Updates an event on the given calendar."
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "delete_event",
+     "params": [
+      "calendarId",
+      "eventId",
+      "notificationLevel"
+     ],
+     "read_only": false,
+     "summary": "Deletes an event on the given calendar."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "respond_to_event",
+     "params": [
+      "calendarId",
+      "eventId",
+      "notificationLevel",
+      "responseComment",
+      "responseStatus"
+     ],
+     "read_only": false,
+     "summary": "Responds to an event on a calendar."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_events",
+     "params": [
+      "pageSize",
+      "pageToken",
+      "query"
+     ],
+     "read_only": true,
+     "summary": "Searches events on the user's primary calendar using semantic search."
+    }
+   ],
+   "v1self": [
+    "create_event",
+    "get_event",
+    "list_calendars",
+    "list_events",
+    "respond_to_event",
+    "search_events",
+    "suggest_time",
+    "update_event"
+   ]
+  },
+  "chat": {
+   "documented": [
+    "get_notification_settings",
+    "list_memberships",
+    "list_messages",
+    "mark_as_read",
+    "mark_as_unread",
+    "search_conversations",
+    "search_messages",
+    "send_message",
+    "update_notification_settings"
+   ],
+   "endpoint": "https://chatmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/chat/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_messages",
+     "params": [
+      "conversationId",
+      "endTime",
+      "pageSize",
+      "pageToken",
+      "startTime",
+      "threadId"
+     ],
+     "read_only": true,
+     "summary": "Retrieves messages from a specified Google Chat conversation (Space, direct message (DM) or group DM) in Markdown format. Allows filtering by thread, time range, and number of messages. Additionally, the next page of messages can be retriev"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_messages",
+     "params": [
+      "pageSize",
+      "pageToken",
+      "searchParameters"
+     ],
+     "read_only": true,
+     "summary": "Searches for Google Chat messages using keywords and filters returning them in Markdown format. Works across all spaces the user has access to, or can be scoped to a specific conversation. Follow this guidance when deciding to use `search_m"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_conversations",
+     "params": [
+      "discoverableSpaces",
+      "pageSize",
+      "pageToken",
+      "participants",
+      "pendingInvites",
+      "spaceNameQuery"
+     ],
+     "read_only": true,
+     "summary": "Searches for Google Chat conversations to find conversation IDs. Named spaces are found by display name (`space_name_query`). Direct messages (DMs) and group chats are found only by participant email addresses (`participants`). This tool se"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "send_message",
+     "params": [
+      "cards",
+      "conversationId",
+      "footerCitedSources",
+      "inlineCitations",
+      "messageText",
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Sends a Google Chat message to a conversation with Markdown formatting and optional citations. This tool uses a conversation ID, an optional thread ID, a message text, optional inline citations, and optional footer cited sources as inputs. "
+    }
+   ],
+   "v1self": [
+    "list_messages",
+    "search_conversations",
+    "search_messages"
+   ]
+  },
+  "docs": {
+   "documented": [
+    "read_doc",
+    "update_doc"
+   ],
+   "endpoint": "https://docsmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/docs/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "read_doc",
+     "params": [
+      "commentsIncluded",
+      "documentId"
+     ],
+     "read_only": true,
+     "summary": "This tool retrieves a JSON representation of the Google Doc given its document ID. The JSON representation includes both the text as well as structural information about the document. Corresponds to [`documents.get`](https://developers.goog"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [
+      "replaceAllText",
+      "insertText",
+      "updateTextStyle",
+      "createParagraphBullets",
+      "deleteParagraphBullets",
+      "createNamedRange",
+      "deleteNamedRange",
+      "updateParagraphStyle",
+      "deleteContentRange",
+      "insertInlineImage",
+      "insertTable",
+      "insertTableRow",
+      "insertTableColumn",
+      "deleteTableRow",
+      "deleteTableColumn",
+      "insertPageBreak",
+      "deletePositionedObject",
+      "updateTableColumnProperties",
+      "updateTableCellStyle",
+      "updateTableRowStyle",
+      "replaceImage",
+      "updateDocumentStyle",
+      "mergeTableCells",
+      "unmergeTableCells",
+      "createHeader",
+      "createFooter",
+      "createFootnote",
+      "replaceNamedRangeContent",
+      "updateSectionStyle",
+      "insertSectionBreak",
+      "deleteHeader",
+      "deleteFooter",
+      "pinTableHeaderRows",
+      "addDocumentTab",
+      "deleteTab",
+      "updateDocumentTabProperties",
+      "insertPerson",
+      "updateNamedStyle",
+      "insertRichLink",
+      "insertDate",
+      "insertComment",
+      "addCommentReply",
+      "updateCommentPost",
+      "deleteComment",
+      "deleteCommentReply",
+      "acceptSuggestion",
+      "rejectSuggestion",
+      "deleteSuggestion"
+     ],
+     "name": "update_doc",
+     "params": [
+      "documentId",
+      "requests",
+      "writeControl"
+     ],
+     "read_only": false,
+     "summary": "Updates a document using batch update requests. It accepts a `documents.batchUpdate` request (as JSON). Corresponds to [`documents.batchUpdate`](https://developers.google.com/workspace/docs/api/reference/rest/v1/documents/batchUpdate) in th"
+    }
+   ],
+   "v1self": [
+    "read_doc",
+    "update_doc"
+   ]
+  },
+  "drive": {
+   "documented": [
+    "copy_file",
+    "create_file",
+    "download_file_content",
+    "get_file_metadata",
+    "get_file_permissions",
+    "list_recent_files",
+    "read_file_content",
+    "search_files",
+    "upload_file_revision"
+   ],
+   "endpoint": "https://drivemcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/drive/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "copy_file",
+     "params": [
+      "fileId",
+      "parentId",
+      "pregeneratedId",
+      "title"
+     ],
+     "read_only": false,
+     "summary": "Call this tool to copy an existing File in Google Drive. The tool allows specifying a new title and a parent folder for the copy. If the title is not specified, the copy title will be 'Copy of {original title}'. If the parent folder is not "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "create_file",
+     "params": [
+      "base64Content",
+      "content",
+      "contentMimeType",
+      "disableConversionToGoogleType",
+      "inheritedPermissionsDisabled",
+      "mimeType",
+      "parentId",
+      "pregeneratedId",
+      "textContent",
+      "title"
+     ],
+     "read_only": false,
+     "summary": "Call this tool to create or upload a File to Google Drive. If uploading content, prefer `textContent` for text content. For non-UTF8 contents, use the `base64Content` field and base64 encode the data to set on that field. Returns a single F"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "download_file_content",
+     "params": [
+      "exportMimeType",
+      "fileId",
+      "revisionId"
+     ],
+     "read_only": true,
+     "summary": "Call this tool to download the content of a Drive file as a base64 encoded string. If the file is a Google Drive first-party mime type, the `exportMimeType` field specifies the desired export mime type. When the field is unset, defaults to "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_file_metadata",
+     "params": [
+      "excludeContentSnippets",
+      "fileId",
+      "includeExternalityState",
+      "includeRichMetadata",
+      "snippetVerbosity"
+     ],
+     "read_only": true,
+     "summary": "Call this tool to find general metadata about a user's Drive file. Context window token management can be tuned via `snippetVerbosity` (default is `SnippetVerbosity.DETAILED`) or if only metadata is needed, use `excludeContentSnippets`. If "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_file_permissions",
+     "params": [
+      "fileId"
+     ],
+     "read_only": true,
+     "summary": "Call this tool to list the permissions of a Drive File. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_recent_files",
+     "params": [
+      "excludeContentSnippets",
+      "includeExternalityState",
+      "orderBy",
+      "pageSize",
+      "pageToken",
+      "snippetVerbosity"
+     ],
+     "read_only": true,
+     "summary": "Call this tool to find recent files for a user specified a sort order. Default sort order is `recency` if orderBy is not set or set to an unsupported value. Context window token management can be tuned via `snippetVerbosity` (default is `Sn"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "read_file_content",
+     "params": [
+      "fileId",
+      "includeComments"
+     ],
+     "read_only": true,
+     "summary": "Call this tool to fetch a natural language representation of a known Drive file, and if specified, its comments. REQUIREMENTS & WORKFLOW: - `fileId` is required. You MUST pass an exact Drive file ID returned by a previous discovery tool (`s"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_files",
+     "params": [
+      "excludeContentSnippets",
+      "includeExternalityState",
+      "includeRichMetadata",
+      "orderBy",
+      "pageSize",
+      "pageToken",
+      "query",
+      "snippetVerbosity"
+     ],
+     "read_only": true,
+     "summary": "Search for Drive files using a structured query (syntax: `query_term operator values`). Only terms in this list are supported. Combine clauses with `and`, `or`, `not`, and parentheses. String values must be single-quoted; escape embedded qu"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "upload_file_revision",
+     "params": [
+      "base64Content",
+      "contentMimeType",
+      "etag",
+      "fileId",
+      "textContent"
+     ],
+     "read_only": false,
+     "summary": "Call this tool to upload a new content revision for an existing blob file in Google Drive. Prefer `textContent` for UTF-8 text content. For binary or non-UTF8 contents, use the `base64Content` field and base64 encode the data. The `contentM"
+    }
+   ],
+   "v1self": [
+    "copy_file",
+    "create_file",
+    "download_file_content",
+    "get_file_metadata",
+    "get_file_permissions",
+    "list_recent_files",
+    "read_file_content",
+    "search_files"
+   ]
+  },
+  "gmail": {
+   "documented": [
+    "apply_sensitive_message_label",
+    "apply_sensitive_thread_label",
+    "create_draft",
+    "create_label",
+    "get_draft",
+    "get_message",
+    "get_thread",
+    "label_message",
+    "label_thread",
+    "list_drafts",
+    "list_labels",
+    "mark_message_spam",
+    "mark_thread_spam",
+    "search_threads",
+    "trash_message",
+    "trash_thread",
+    "unlabel_message",
+    "unlabel_thread",
+    "unmark_message_spam",
+    "unmark_thread_spam",
+    "untrash_message",
+    "untrash_thread",
+    "update_message_labels"
+   ],
+   "endpoint": "https://gmailmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/gmail/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "create_draft",
+     "params": [
+      "attachments",
+      "bcc",
+      "body",
+      "cc",
+      "htmlBody",
+      "includeSignature",
+      "replyToMessageId",
+      "subject",
+      "to"
+     ],
+     "read_only": false,
+     "summary": "Creates a new draft email in the authenticated user's Gmail account. This tool takes recipient addresses (`to`, `cc`, `bcc`), a `subject`, and body content as inputs. Plain text body content can be provided in `body` (do NOT format `body` w"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_drafts",
+     "params": [
+      "pageSize",
+      "pageToken",
+      "query",
+      "view"
+     ],
+     "read_only": true,
+     "summary": "Lists draft emails from the authenticated user's Gmail account, optionally filtered by a query string. Note: An empty JSON object `{}` represents zero matching items, not an error. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_draft",
+     "params": [
+      "draftId",
+      "messageFormat"
+     ],
+     "read_only": true,
+     "summary": "Retrieves a specific draft email from the authenticated user's Gmail account by ID, including its `viewUrl` for viewing and editing in the Gmail Web UI. The optional `messageFormat` parameter controls the format of the draft returned. By de"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_thread",
+     "params": [
+      "messageFormat",
+      "threadId"
+     ],
+     "read_only": true,
+     "summary": "Retrieves a specific email thread from the authenticated user's Gmail account, including its `viewUrl` and a list of its messages (each with their own `viewUrl`). Note: This tool does not support retrieving drafts. Any draft messages within"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_message",
+     "params": [
+      "messageFormat",
+      "messageId"
+     ],
+     "read_only": true,
+     "summary": "Retrieves a specific email message from the authenticated user's Gmail account by its unique message ID, including its `viewUrl`. Use this tool to inspect a single, individual email when you already know its message ID. If the user wants to"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_threads",
+     "params": [
+      "includeTrash",
+      "pageSize",
+      "pageToken",
+      "query",
+      "view"
+     ],
+     "read_only": true,
+     "summary": "Lists email threads from the authenticated user's Gmail account. This tool can filter threads based on a query string and supports pagination. It returns a list of threads, each with its thread `id`, `messageCount` (total messages in the th"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "label_thread",
+     "params": [
+      "labelIds",
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Adds labels to an entire thread in the authenticated user's Gmail account. This operation affects all messages currently in the thread and any future messages added to it. If unsure of a user label's ID, use the `list_labels` tool first to "
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "unlabel_thread",
+     "params": [
+      "labelIds",
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Removes labels from an entire thread in the authenticated user's Gmail account. This operation affects all messages currently in the thread. Use `unlabel_thread` when removing labels from an email or thread (such as marking it as read by re"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "apply_sensitive_thread_label",
+     "params": [
+      "labelOption",
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Prefer `trash_thread` or `mark_thread_spam` instead. Adds a sensitive label (Trash or Spam) to a single thread in the authenticated user's Gmail account. This operation affects all messages currently in the thread. Use `apply_sensitive_thre"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "trash_thread",
+     "params": [
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Moves an entire thread to the Trash (soft delete) in the authenticated user's Gmail account. This operation affects all messages currently in the thread. This is the default tool (along with `trash_message`) when a user asks to 'delete', 'r"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "untrash_thread",
+     "params": [
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Removes an entire thread from the Trash in the authenticated user's Gmail account. This does not return the thread to the Inbox; to move it to the Inbox, add the `INBOX` label separately. "
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "mark_thread_spam",
+     "params": [
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Marks an entire thread as Spam in the authenticated user's Gmail account. This operation affects all messages currently in the thread. Use `mark_thread_spam` when marking a thread as spam, even if it currently contains only 1 message. Marki"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "unmark_thread_spam",
+     "params": [
+      "threadId"
+     ],
+     "read_only": false,
+     "summary": "Unmarks an entire thread as Spam in the authenticated user's Gmail account. This does not return the thread to the Inbox; to move it to the Inbox, add the `INBOX` label separately. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_labels",
+     "params": [],
+     "read_only": true,
+     "summary": "Lists all labels available in the authenticated user's Gmail account. Use this tool to discover the `labelId` and display `name` of each label in `labels` before calling `label_thread`, `unlabel_thread`, `label_message`, or `unlabel_message"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "label_message",
+     "params": [
+      "labelIds",
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Adds one or more labels to a specific message in the authenticated user's Gmail account. To find the message ID, use the `get_thread` tool. If unsure of a user label's ID, use the `list_labels` tool first to discover available labels and th"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "update_message_labels",
+     "params": [
+      "addLabelIds",
+      "messageId",
+      "removeLabelIds"
+     ],
+     "read_only": false,
+     "summary": "Atomically adds and/or removes labels from a specific message in the authenticated user's Gmail account. Requires at least one of `addLabelIds` or `removeLabelIds` to be provided. Moving an email between labels can be accomplished in a sing"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "unlabel_message",
+     "params": [
+      "labelIds",
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Removes one or more labels from a specific message in the authenticated user's Gmail account. To find the message ID, use the `get_thread` tool. If unsure of a user label's ID, use the `list_labels` tool first to discover available labels a"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "apply_sensitive_message_label",
+     "params": [
+      "labelOption",
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Prefer `trash_message` or `mark_message_spam` instead. Adds a sensitive label (Trash or Spam) to a single message in the authenticated user's Gmail account. Use `apply_sensitive_message_label` when applying Trash or Spam to exactly 1 messag"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "trash_message",
+     "params": [
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Moves a specific message to the Trash (soft delete) in the authenticated user's Gmail account. This is the default tool (along with `trash_thread`) when a user asks to 'delete', 'remove', or 'get rid of' a message without explicitly request"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "untrash_message",
+     "params": [
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Removes a specific message from the Trash in the authenticated user's Gmail account. This does not return the message to the Inbox; to move it to the Inbox, add the `INBOX` label separately. To find the message ID, use the `get_thread` tool"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "mark_message_spam",
+     "params": [
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Marks a specific message as Spam in the authenticated user's Gmail account. To find the message ID, use the `get_thread` tool. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "unmark_message_spam",
+     "params": [
+      "messageId"
+     ],
+     "read_only": false,
+     "summary": "Unmarks a specific message as Spam in the authenticated user's Gmail account. This does not return the message to the Inbox; to move it to the Inbox, add the `INBOX` label separately. To find the message ID, use the `get_thread` tool. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "create_label",
+     "params": [
+      "autoCreateParentLabels",
+      "color",
+      "colorPreset",
+      "displayName",
+      "labelListVisibility",
+      "messageListVisibility"
+     ],
+     "read_only": false,
+     "summary": "Creates a new label in the authenticated user's Gmail account. Supports creating nested labels (sub-labels) using a forward slash (e.g., 'Projects/Alpha/Sprint-1'). By default, parent labels will be automatically created if they do not exis"
+    }
+   ],
+   "v1self": [
+    "create_draft",
+    "create_label",
+    "get_draft",
+    "get_message",
+    "get_thread",
+    "label_message",
+    "label_thread",
+    "list_drafts",
+    "list_labels",
+    "mark_message_spam",
+    "mark_thread_spam",
+    "search_threads",
+    "trash_message",
+    "trash_thread",
+    "unlabel_message",
+    "unlabel_thread",
+    "unmark_message_spam",
+    "unmark_thread_spam",
+    "untrash_message",
+    "untrash_thread",
+    "update_message_labels"
+   ]
+  },
+  "people": {
+   "documented": [
+    "get_user_profile",
+    "search_contacts",
+    "search_directory_people"
+   ],
+   "endpoint": "https://people.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/people/api/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_directory_people",
+     "params": [
+      "pageSize",
+      "pageToken",
+      "query",
+      "sources"
+     ],
+     "read_only": true,
+     "summary": "Search for people within your organization's Google Workspace directory. This feature is exclusively for Google Workspace accounts (used by businesses, schools, and other organizations) and is not available for personal Google accounts. **I"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "search_contacts",
+     "params": [
+      "maxResults",
+      "query"
+     ],
+     "read_only": true,
+     "summary": "Search user's contacts. **IMPORTANT RULES TO FOLLOW:** * If this tool returns multiple results, you should present the results to the user and prompt the user for clarification on which result to use before proceeding. * You are strictly fo"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_user_profile",
+     "params": [],
+     "read_only": true,
+     "summary": "Get profile info about yourself (name and email)."
+    }
+   ],
+   "v1self": null
+  },
+  "sheets": {
+   "documented": [
+    "get_spreadsheet",
+    "get_values",
+    "insert_dimension",
+    "update_formulas",
+    "update_spreadsheet",
+    "update_values"
+   ],
+   "endpoint": "https://sheetsmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/sheets/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_values",
+     "params": [
+      "range",
+      "spreadsheetId"
+     ],
+     "read_only": true,
+     "summary": "Returns a range of values from a spreadsheet. Corresponds to spreadsheets.values.get in the REST API: https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/get Schema: - `spreadsheetId` (string, required):"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_spreadsheet",
+     "params": [
+      "commentsIncluded",
+      "fields",
+      "includeGridData",
+      "ranges",
+      "spreadsheetId"
+     ],
+     "read_only": true,
+     "summary": "Returns the spreadsheet content for the given spreadsheet. Returns titles, sheet names, grid properties, and other metadata for the given spreadsheet ID. Also returns full grid data if requested. Corresponds to spreadsheets.get in the REST "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [
+      "updateSpreadsheetProperties",
+      "updateSheetProperties",
+      "updateDimensionProperties",
+      "updateNamedRange",
+      "repeatCell",
+      "addNamedRange",
+      "deleteNamedRange",
+      "addSheet",
+      "deleteSheet",
+      "autoFill",
+      "cutPaste",
+      "copyPaste",
+      "mergeCells",
+      "unmergeCells",
+      "updateBorders",
+      "updateCells",
+      "addFilterView",
+      "appendCells",
+      "clearBasicFilter",
+      "deleteDimension",
+      "deleteEmbeddedObject",
+      "deleteFilterView",
+      "duplicateFilterView",
+      "duplicateSheet",
+      "findReplace",
+      "insertDimension",
+      "insertRange",
+      "moveDimension",
+      "updateEmbeddedObjectPosition",
+      "pasteData",
+      "textToColumns",
+      "updateFilterView",
+      "deleteRange",
+      "appendDimension",
+      "addConditionalFormatRule",
+      "updateConditionalFormatRule",
+      "deleteConditionalFormatRule",
+      "sortRange",
+      "setDataValidation",
+      "setBasicFilter",
+      "addProtectedRange",
+      "updateProtectedRange",
+      "deleteProtectedRange",
+      "autoResizeDimensions",
+      "addChart",
+      "updateChartSpec",
+      "updateBanding",
+      "addBanding",
+      "deleteBanding",
+      "createDeveloperMetadata",
+      "updateDeveloperMetadata",
+      "deleteDeveloperMetadata",
+      "randomizeRange",
+      "addDimensionGroup",
+      "deleteDimensionGroup",
+      "updateDimensionGroup",
+      "trimWhitespace",
+      "deleteDuplicates",
+      "updateEmbeddedObjectBorder",
+      "addSlicer",
+      "updateSlicerSpec",
+      "addDataSource",
+      "updateDataSource",
+      "deleteDataSource",
+      "refreshDataSource",
+      "cancelDataSourceRefresh",
+      "addTable",
+      "updateTable",
+      "deleteTable",
+      "insertComment",
+      "addCommentReply",
+      "updateCommentPost",
+      "deleteComment",
+      "deleteCommentReply"
+     ],
+     "name": "update_spreadsheet",
+     "params": [
+      "requests",
+      "spreadsheetId",
+      "writeControl"
+     ],
+     "read_only": false,
+     "summary": "Applies one or more updates to the spreadsheet. Corresponds to spreadsheets.batchUpdate in the REST API: https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/batchUpdate The list of possible updates is: - `updat"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "update_values",
+     "params": [
+      "range",
+      "spreadsheetId",
+      "values"
+     ],
+     "read_only": false,
+     "summary": "Sets values in a range of a spreadsheet. Corresponds to spreadsheets.values.update in the REST API: https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/update Schema: - `spreadsheetId` (string, required)"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "update_formulas",
+     "params": [
+      "formulas",
+      "range",
+      "spreadsheetId"
+     ],
+     "read_only": false,
+     "summary": "Sets formulas in a range of a spreadsheet. Corresponds to spreadsheets.values.update in the REST API: https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets.values/update Schema: - `spreadsheetId` (string, require"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "insert_dimension",
+     "params": [
+      "dimension",
+      "endIndex",
+      "inheritFromBefore",
+      "sheetId",
+      "spreadsheetId",
+      "startIndex"
+     ],
+     "read_only": false,
+     "summary": "Inserts rows or columns in a sheet at a particular index. Corresponds to an InsertDimensionRequest in the spreadsheets.batchUpdate REST API: https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/request Schema: -"
+    }
+   ],
+   "v1self": [
+    "get_spreadsheet",
+    "get_values",
+    "insert_dimension",
+    "update_formulas",
+    "update_spreadsheet",
+    "update_values"
+   ]
+  },
+  "slides": {
+   "documented": [
+    "read_presentation",
+    "read_slide_page",
+    "read_slide_page_thumbnail",
+    "update_presentation"
+   ],
+   "endpoint": "https://slidesmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/slides/api/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "read_presentation",
+     "params": [
+      "commentsIncluded",
+      "fields",
+      "presentationId"
+     ],
+     "read_only": true,
+     "summary": "Read a JSON representation of a Google Slides presentation. Corresponds to [`presentations.get`](https://developers.google.com/workspace/slides/api/reference/rest/v1/presentations/get) in the REST API. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "read_slide_page",
+     "params": [
+      "commentsIncluded",
+      "fields",
+      "pageId",
+      "presentationId"
+     ],
+     "read_only": true,
+     "summary": "Read a JSON representation of a single slide/page from a Google Slides presentation. Corresponds to [`presentations.pages.get`](https://developers.google.com/workspace/slides/api/reference/rest/v1/presentations.pages/get) in the REST API. "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "read_slide_page_thumbnail",
+     "params": [
+      "pageId",
+      "presentationId",
+      "thumbnailProperties"
+     ],
+     "read_only": true,
+     "summary": "Reads a thumbnail representation of a single slide page in a presentation, returning the thumbnail image URL along with its width and height dimensions. Corresponds to [`presentations.pages.getThumbnail`](https://developers.google.com/works"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [
+      "createSlide",
+      "createShape",
+      "createTable",
+      "insertText",
+      "insertTableRows",
+      "insertTableColumns",
+      "deleteTableRow",
+      "deleteTableColumn",
+      "replaceAllText",
+      "deleteObject",
+      "updatePageElementTransform",
+      "updateSlidesPosition",
+      "deleteText",
+      "createImage",
+      "createVideo",
+      "createSheetsChart",
+      "createLine",
+      "refreshSheetsChart",
+      "updateShapeProperties",
+      "updateImageProperties",
+      "updateVideoProperties",
+      "updatePageProperties",
+      "updateTableCellProperties",
+      "updateLineProperties",
+      "createParagraphBullets",
+      "replaceAllShapesWithImage",
+      "duplicateObject",
+      "updateTextStyle",
+      "replaceAllShapesWithSheetsChart",
+      "deleteParagraphBullets",
+      "updateParagraphStyle",
+      "updateTableBorderProperties",
+      "updateTableColumnProperties",
+      "updateTableRowProperties",
+      "mergeTableCells",
+      "unmergeTableCells",
+      "groupObjects",
+      "ungroupObjects",
+      "updatePageElementAltText",
+      "replaceImage",
+      "updateSlideProperties",
+      "updatePageElementsZOrder",
+      "importSlides",
+      "updateLineCategory",
+      "rerouteLine",
+      "createAudio",
+      "updateAudioProperties",
+      "insertComment",
+      "addCommentReply",
+      "updateCommentPost",
+      "deleteComment",
+      "deleteCommentReply"
+     ],
+     "name": "update_presentation",
+     "params": [
+      "presentationId",
+      "requests",
+      "writeControl"
+     ],
+     "read_only": false,
+     "summary": "Updates a presentation with set of batchUpdate requests. Corresponds to [`presentations.batchUpdate`](https://developers.google.com/workspace/slides/api/reference/rest/v1/presentations/batchUpdate) in the REST API. The list of possible upda"
+    }
+   ],
+   "v1self": [
+    "read_presentation",
+    "read_slide_page",
+    "read_slide_page_thumbnail",
+    "update_presentation"
+   ]
+  },
+  "tasks": {
+   "documented": [
+    "complete_task",
+    "create_task",
+    "delete_task",
+    "get_task",
+    "list_task_lists",
+    "list_tasks",
+    "uncomplete_task",
+    "undelete_task",
+    "update_task"
+   ],
+   "endpoint": "https://tasksmcp.googleapis.com/mcp/v1",
+   "reference_url": "https://developers.google.com/workspace/tasks/reference/mcp",
+   "tools": [
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_task_lists",
+     "params": [
+      "pageSize"
+     ],
+     "read_only": true,
+     "summary": "Returns the task lists of the authenticated user."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "list_tasks",
+     "params": [
+      "filter",
+      "pageSize",
+      "pageToken"
+     ],
+     "read_only": true,
+     "summary": "Returns the user's tasks (to-dos and reminders). Unless `filter.taskListId` is set, tasks from all task lists are returned. By default, only uncompleted tasks are returned and deleted tasks are excluded. Tasks are not returned in the order "
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "get_task",
+     "params": [
+      "taskId"
+     ],
+     "read_only": true,
+     "summary": "Returns a single task by its ID. Unlike `list_tasks`, completed and deleted tasks are always returned (indicated by `completed` and `deleted`)."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "create_task",
+     "params": [
+      "attachments",
+      "deadlineDate",
+      "description",
+      "recurrenceRule",
+      "scheduledDate",
+      "scheduledTime",
+      "taskListId",
+      "timeZone",
+      "title"
+     ],
+     "read_only": false,
+     "summary": "Creates a new task in a list. A task is a to-do or a reminder for an action the user needs to complete, usually with flexible timing. Tasks often start with a verb, e.g., \"review\", \"prepare\", \"submit\", \"send\". A task with a scheduled date a"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "update_task",
+     "params": [
+      "addedAttachments",
+      "deadlineDate",
+      "description",
+      "recurrenceRule",
+      "removedAttachmentIds",
+      "scheduledDate",
+      "scheduledTime",
+      "taskId",
+      "timeZone",
+      "title",
+      "updateSeries"
+     ],
+     "read_only": false,
+     "summary": "Updates an existing task. Note: To mark a task as completed or uncompleted, use `complete_task` or `uncomplete_task` instead. Limitation: An existing non-recurring task can't be made recurring. If the user asks for it, explain that this isn"
+    },
+    {
+     "destructive": true,
+     "listed_requests": [],
+     "name": "delete_task",
+     "params": [
+      "deleteSeries",
+      "taskId"
+     ],
+     "read_only": false,
+     "summary": "Deletes an existing task. A deleted task can be restored with `undelete_task`, unless it is shared or the whole recurrence series was deleted. Deleting a task that is already deleted has no effect."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "undelete_task",
+     "params": [
+      "taskId"
+     ],
+     "read_only": false,
+     "summary": "Restores a deleted task. Use `list_tasks` with `filter.includeDeleted` (or `get_task`) to find the ID of a deleted task. Only tasks that are not shared can be restored, and a single occurrence of a recurring task cannot be restored if the w"
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "complete_task",
+     "params": [
+      "taskId"
+     ],
+     "read_only": false,
+     "summary": "Marks a task as complete."
+    },
+    {
+     "destructive": false,
+     "listed_requests": [],
+     "name": "uncomplete_task",
+     "params": [
+      "taskId"
+     ],
+     "read_only": false,
+     "summary": "Marks a task as uncomplete."
+    }
+   ],
+   "v1self": [
+    "complete_task",
+    "create_task",
+    "get_task",
+    "list_task_lists",
+    "list_tasks",
+    "uncomplete_task",
+    "undelete_task",
+    "update_task"
+   ]
+  }
+ },
+ "quota": {
+  "calendar": {
+   "tools": {
+    "create_event": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "delete_event": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 10
+    },
+    "get_event": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "list_calendars": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "list_events": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "respond_to_event": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "search_events": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "suggest_time": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    },
+    "update_event": {
+     "bucket": "Plus",
+     "daily_requests": 1,
+     "query_cost": 1
+    }
+   },
+   "url": "https://developers.google.com/workspace/calendar/api/guides/quotas"
+  },
+  "drive": {
+   "tools": {
+    "copy_file": {
+     "bucket": "Medium",
+     "category": "Write requests (write_requests)",
+     "daily_requests": 1
+    },
+    "create_file": {
+     "bucket": "Medium",
+     "category": "Write requests (write_requests)",
+     "daily_requests": 1
+    },
+    "download_file_content": {
+     "bucket": "Premium",
+     "category": "Download requests (download_requests)",
+     "daily_requests": 1
+    },
+    "get_file_metadata": {
+     "bucket": "Light",
+     "category": "Point read requests (point_read_requests)",
+     "daily_requests": 1
+    },
+    "get_file_permissions": {
+     "bucket": "Light",
+     "category": "Point read requests (point_read_requests)",
+     "daily_requests": 1
+    },
+    "list_recent_files": {
+     "bucket": "Plus",
+     "category": "List read requests (list_read_requests)",
+     "daily_requests": 1
+    },
+    "read_file_content": {
+     "bucket": "Premium",
+     "category": "Download requests (download_requests)",
+     "daily_requests": 1
+    },
+    "search_files": {
+     "bucket": "Plus",
+     "category": "List read requests (list_read_requests)",
+     "daily_requests": 1
+    }
+   },
+   "url": "https://developers.google.com/workspace/drive/api/guides/quotas"
+  },
+  "gmail": {
+   "partner_tools_in_note": [
+    "create_filter",
+    "delete_label",
+    "forward",
+    "list_filters",
+    "reply",
+    "send_message",
+    "update_draft",
+    "update_label"
+   ],
+   "tools": {
+    "apply_sensitive_message_label": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "apply_sensitive_thread_label": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "create_draft": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "create_filter": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 5
+    },
+    "create_label": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "delete_label": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 5
+    },
+    "forward": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 160
+    },
+    "get_draft": {
+     "bucket": "Light",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 45
+    },
+    "get_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 60
+    },
+    "get_thread": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 110
+    },
+    "label_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "label_thread": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "list_drafts": {
+     "bucket": "Medium",
+     "daily_requests": 10,
+     "partner": false,
+     "query_cost": 600
+    },
+    "list_filters": {
+     "bucket": "Light",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 1
+    },
+    "list_labels": {
+     "bucket": "Light",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 1
+    },
+    "mark_message_spam": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "mark_thread_spam": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "reply": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 160
+    },
+    "search_threads": {
+     "bucket": "Premium",
+     "daily_requests": 10,
+     "partner": false,
+     "query_cost": 700
+    },
+    "send_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 100
+    },
+    "trash_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 20
+    },
+    "trash_thread": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 20
+    },
+    "unlabel_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "unlabel_thread": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "unmark_message_spam": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "unmark_thread_spam": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "untrash_message": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    },
+    "untrash_thread": {
+     "bucket": "Premium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 10
+    },
+    "update_draft": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 15
+    },
+    "update_label": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": true,
+     "query_cost": 5
+    },
+    "update_message_labels": {
+     "bucket": "Medium",
+     "daily_requests": 1,
+     "partner": false,
+     "query_cost": 5
+    }
+   },
+   "url": "https://developers.google.com/workspace/gmail/api/guides/quotas"
+  }
+ },
+ "rest": {
+  "calendar": {
+   "base_url": "https://www.googleapis.com/calendar/v3/",
+   "discovery_url": "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+   "label": "Calendar",
+   "methods": [
+    {
+     "http": "DELETE",
+     "id": "calendar.acl.delete",
+     "path": "calendars/{calendarId}/acl/{ruleId}"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.acl.get",
+     "path": "calendars/{calendarId}/acl/{ruleId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.acl.insert",
+     "path": "calendars/{calendarId}/acl"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.acl.list",
+     "path": "calendars/{calendarId}/acl"
+    },
+    {
+     "http": "PATCH",
+     "id": "calendar.acl.patch",
+     "path": "calendars/{calendarId}/acl/{ruleId}"
+    },
+    {
+     "http": "PUT",
+     "id": "calendar.acl.update",
+     "path": "calendars/{calendarId}/acl/{ruleId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.acl.watch",
+     "path": "calendars/{calendarId}/acl/watch"
+    },
+    {
+     "http": "DELETE",
+     "id": "calendar.calendarList.delete",
+     "path": "users/me/calendarList/{calendarId}"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.calendarList.get",
+     "path": "users/me/calendarList/{calendarId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.calendarList.insert",
+     "path": "users/me/calendarList"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.calendarList.list",
+     "path": "users/me/calendarList"
+    },
+    {
+     "http": "PATCH",
+     "id": "calendar.calendarList.patch",
+     "path": "users/me/calendarList/{calendarId}"
+    },
+    {
+     "http": "PUT",
+     "id": "calendar.calendarList.update",
+     "path": "users/me/calendarList/{calendarId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.calendarList.watch",
+     "path": "users/me/calendarList/watch"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.calendars.clear",
+     "path": "calendars/{calendarId}/clear"
+    },
+    {
+     "http": "DELETE",
+     "id": "calendar.calendars.delete",
+     "path": "calendars/{calendarId}"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.calendars.get",
+     "path": "calendars/{calendarId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.calendars.insert",
+     "path": "calendars"
+    },
+    {
+     "http": "PATCH",
+     "id": "calendar.calendars.patch",
+     "path": "calendars/{calendarId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.calendars.transferOwnership",
+     "path": "calendars/{calendarId}/transferOwnership"
+    },
+    {
+     "http": "PUT",
+     "id": "calendar.calendars.update",
+     "path": "calendars/{calendarId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.channels.stop",
+     "path": "channels/stop"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.colors.get",
+     "path": "colors"
+    },
+    {
+     "http": "DELETE",
+     "id": "calendar.events.delete",
+     "path": "calendars/{calendarId}/events/{eventId}"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.events.get",
+     "path": "calendars/{calendarId}/events/{eventId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.events.import",
+     "path": "calendars/{calendarId}/events/import"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.events.insert",
+     "path": "calendars/{calendarId}/events"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.events.instances",
+     "path": "calendars/{calendarId}/events/{eventId}/instances"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.events.list",
+     "path": "calendars/{calendarId}/events"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.events.move",
+     "path": "calendars/{calendarId}/events/{eventId}/move"
+    },
+    {
+     "http": "PATCH",
+     "id": "calendar.events.patch",
+     "path": "calendars/{calendarId}/events/{eventId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.events.quickAdd",
+     "path": "calendars/{calendarId}/events/quickAdd"
+    },
+    {
+     "http": "PUT",
+     "id": "calendar.events.update",
+     "path": "calendars/{calendarId}/events/{eventId}"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.events.watch",
+     "path": "calendars/{calendarId}/events/watch"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.freebusy.query",
+     "path": "freeBusy"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.settings.get",
+     "path": "users/me/settings/{setting}"
+    },
+    {
+     "http": "GET",
+     "id": "calendar.settings.list",
+     "path": "users/me/settings"
+    },
+    {
+     "http": "POST",
+     "id": "calendar.settings.watch",
+     "path": "users/me/settings/watch"
+    }
+   ],
+   "revision": "20261118",
+   "version": "v3"
+  },
+  "chat": {
+   "base_url": "https://chat.googleapis.com/",
+   "discovery_url": "https://chat.googleapis.com/$discovery/rest?version=v1",
+   "label": "Chat",
+   "methods": [
+    {
+     "http": "POST",
+     "id": "chat.customEmojis.create",
+     "path": "v1/customEmojis"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.customEmojis.delete",
+     "path": "v1/customEmojis/{customEmojisId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.customEmojis.get",
+     "path": "v1/customEmojis/{customEmojisId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.customEmojis.list",
+     "path": "v1/customEmojis"
+    },
+    {
+     "http": "GET",
+     "id": "chat.media.download",
+     "path": "v1/media/{mediaId}"
+    },
+    {
+     "http": "POST",
+     "id": "chat.media.upload",
+     "path": "v1/spaces/{spacesId}/attachments:upload"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.completeImport",
+     "path": "v1/spaces/{spacesId}:completeImport"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.create",
+     "path": "v1/spaces"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.spaces.delete",
+     "path": "v1/spaces/{spacesId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.findDirectMessage",
+     "path": "v1/spaces:findDirectMessage"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.findGroupChats",
+     "path": "v1/spaces:findGroupChats"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.get",
+     "path": "v1/spaces/{spacesId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.list",
+     "path": "v1/spaces"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.members.create",
+     "path": "v1/spaces/{spacesId}/members"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.spaces.members.delete",
+     "path": "v1/spaces/{spacesId}/members/{membersId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.members.get",
+     "path": "v1/spaces/{spacesId}/members/{membersId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.members.list",
+     "path": "v1/spaces/{spacesId}/members"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.spaces.members.patch",
+     "path": "v1/spaces/{spacesId}/members/{membersId}"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.messagePins.create",
+     "path": "v1/spaces/{spacesId}/messagePins"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.spaces.messagePins.delete",
+     "path": "v1/spaces/{spacesId}/messagePins/{messagePinsId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.messagePins.list",
+     "path": "v1/spaces/{spacesId}/messagePins"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.messages.attachments.get",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}/attachments/{attachmentsId}"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.messages.create",
+     "path": "v1/spaces/{spacesId}/messages"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.spaces.messages.delete",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.messages.get",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.messages.list",
+     "path": "v1/spaces/{spacesId}/messages"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.spaces.messages.patch",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.messages.reactions.create",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}/reactions"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.spaces.messages.reactions.delete",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}/reactions/{reactionsId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.messages.reactions.list",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}/reactions"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.messages.replaceCards",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}:replaceCards"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.messages.search",
+     "path": "v1/spaces/{spacesId}/messages:search"
+    },
+    {
+     "http": "PUT",
+     "id": "chat.spaces.messages.update",
+     "path": "v1/spaces/{spacesId}/messages/{messagesId}"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.spaces.patch",
+     "path": "v1/spaces/{spacesId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.search",
+     "path": "v1/spaces:search"
+    },
+    {
+     "http": "POST",
+     "id": "chat.spaces.setup",
+     "path": "v1/spaces:setup"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.spaceEvents.get",
+     "path": "v1/spaces/{spacesId}/spaceEvents/{spaceEventsId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.spaces.spaceEvents.list",
+     "path": "v1/spaces/{spacesId}/spaceEvents"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.availability.get",
+     "path": "v1/users/{usersId}/availability"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.availability.markAsActive",
+     "path": "v1/users/{usersId}/availability:markAsActive"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.availability.markAsAway",
+     "path": "v1/users/{usersId}/availability:markAsAway"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.availability.markAsDoNotDisturb",
+     "path": "v1/users/{usersId}/availability:markAsDoNotDisturb"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.users.availability.patch",
+     "path": "v1/users/{usersId}/availability"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.sections.create",
+     "path": "v1/users/{usersId}/sections"
+    },
+    {
+     "http": "DELETE",
+     "id": "chat.users.sections.delete",
+     "path": "v1/users/{usersId}/sections/{sectionsId}"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.sections.items.list",
+     "path": "v1/users/{usersId}/sections/{sectionsId}/items"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.sections.items.move",
+     "path": "v1/users/{usersId}/sections/{sectionsId}/items/{itemsId}:move"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.sections.list",
+     "path": "v1/users/{usersId}/sections"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.users.sections.patch",
+     "path": "v1/users/{usersId}/sections/{sectionsId}"
+    },
+    {
+     "http": "POST",
+     "id": "chat.users.sections.position",
+     "path": "v1/users/{usersId}/sections/{sectionsId}:position"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.spaces.getSpaceReadState",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/spaceReadState"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.spaces.spaceNotificationSetting.get",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/spaceNotificationSetting"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.users.spaces.spaceNotificationSetting.patch",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/spaceNotificationSetting"
+    },
+    {
+     "http": "GET",
+     "id": "chat.users.spaces.threads.getThreadReadState",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/threads/{threadsId}/threadReadState"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.users.spaces.threads.updateThreadReadState",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/threads/{threadsId}/threadReadState"
+    },
+    {
+     "http": "PATCH",
+     "id": "chat.users.spaces.updateSpaceReadState",
+     "path": "v1/users/{usersId}/spaces/{spacesId}/spaceReadState"
+    }
+   ],
+   "revision": "20261124",
+   "version": "v1"
+  },
+  "docs": {
+   "base_url": "https://docs.googleapis.com/",
+   "discovery_url": "https://docs.googleapis.com/$discovery/rest?version=v1",
+   "label": "Docs",
+   "methods": [
+    {
+     "http": "POST",
+     "id": "docs.documents.batchUpdate",
+     "path": "v1/documents/{documentId}:batchUpdate"
+    },
+    {
+     "http": "POST",
+     "id": "docs.documents.create",
+     "path": "v1/documents"
+    },
+    {
+     "http": "GET",
+     "id": "docs.documents.get",
+     "path": "v1/documents/{documentId}"
+    }
+   ],
+   "revision": "20261118",
+   "version": "v1"
+  },
+  "drive": {
+   "base_url": "https://www.googleapis.com/drive/v3/",
+   "discovery_url": "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest",
+   "label": "Drive",
+   "methods": [
+    {
+     "http": "GET",
+     "id": "drive.about.get",
+     "path": "about"
+    },
+    {
+     "http": "GET",
+     "id": "drive.accessproposals.get",
+     "path": "files/{fileId}/accessproposals/{proposalId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.accessproposals.list",
+     "path": "files/{fileId}/accessproposals"
+    },
+    {
+     "http": "POST",
+     "id": "drive.accessproposals.resolve",
+     "path": "files/{fileId}/accessproposals/{proposalId}:resolve"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.approve",
+     "path": "files/{fileId}/approvals/{approvalId}:approve"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.cancel",
+     "path": "files/{fileId}/approvals/{approvalId}:cancel"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.comment",
+     "path": "files/{fileId}/approvals/{approvalId}:comment"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.decline",
+     "path": "files/{fileId}/approvals/{approvalId}:decline"
+    },
+    {
+     "http": "GET",
+     "id": "drive.approvals.get",
+     "path": "files/{fileId}/approvals/{approvalId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.approvals.list",
+     "path": "files/{fileId}/approvals"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.reassign",
+     "path": "files/{fileId}/approvals/{approvalId}:reassign"
+    },
+    {
+     "http": "POST",
+     "id": "drive.approvals.start",
+     "path": "files/{fileId}/approvals:start"
+    },
+    {
+     "http": "GET",
+     "id": "drive.apps.get",
+     "path": "apps/{appId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.apps.list",
+     "path": "apps"
+    },
+    {
+     "http": "GET",
+     "id": "drive.changes.getStartPageToken",
+     "path": "changes/startPageToken"
+    },
+    {
+     "http": "GET",
+     "id": "drive.changes.list",
+     "path": "changes"
+    },
+    {
+     "http": "POST",
+     "id": "drive.changes.watch",
+     "path": "changes/watch"
+    },
+    {
+     "http": "POST",
+     "id": "drive.channels.stop",
+     "path": "channels/stop"
+    },
+    {
+     "http": "POST",
+     "id": "drive.comments.create",
+     "path": "files/{fileId}/comments"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.comments.delete",
+     "path": "files/{fileId}/comments/{commentId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.comments.get",
+     "path": "files/{fileId}/comments/{commentId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.comments.list",
+     "path": "files/{fileId}/comments"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.comments.update",
+     "path": "files/{fileId}/comments/{commentId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.drives.create",
+     "path": "drives"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.drives.delete",
+     "path": "drives/{driveId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.drives.get",
+     "path": "drives/{driveId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.drives.hide",
+     "path": "drives/{driveId}/hide"
+    },
+    {
+     "http": "GET",
+     "id": "drive.drives.list",
+     "path": "drives"
+    },
+    {
+     "http": "POST",
+     "id": "drive.drives.unhide",
+     "path": "drives/{driveId}/unhide"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.drives.update",
+     "path": "drives/{driveId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.files.copy",
+     "path": "files/{fileId}/copy"
+    },
+    {
+     "http": "POST",
+     "id": "drive.files.create",
+     "path": "files"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.files.delete",
+     "path": "files/{fileId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.files.download",
+     "path": "files/{fileId}/download"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.files.emptyTrash",
+     "path": "files/trash"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.export",
+     "path": "files/{fileId}/export"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.generateCseToken",
+     "path": "files/generateCseToken"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.generateIds",
+     "path": "files/generateIds"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.get",
+     "path": "files/{fileId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.list",
+     "path": "files"
+    },
+    {
+     "http": "GET",
+     "id": "drive.files.listLabels",
+     "path": "files/{fileId}/listLabels"
+    },
+    {
+     "http": "POST",
+     "id": "drive.files.modifyLabels",
+     "path": "files/{fileId}/modifyLabels"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.files.update",
+     "path": "files/{fileId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.files.watch",
+     "path": "files/{fileId}/watch"
+    },
+    {
+     "http": "GET",
+     "id": "drive.operations.get",
+     "path": "operations/{name}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.permissions.create",
+     "path": "files/{fileId}/permissions"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.permissions.delete",
+     "path": "files/{fileId}/permissions/{permissionId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.permissions.get",
+     "path": "files/{fileId}/permissions/{permissionId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.permissions.list",
+     "path": "files/{fileId}/permissions"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.permissions.update",
+     "path": "files/{fileId}/permissions/{permissionId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.replies.create",
+     "path": "files/{fileId}/comments/{commentId}/replies"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.replies.delete",
+     "path": "files/{fileId}/comments/{commentId}/replies/{replyId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.replies.get",
+     "path": "files/{fileId}/comments/{commentId}/replies/{replyId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.replies.list",
+     "path": "files/{fileId}/comments/{commentId}/replies"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.replies.update",
+     "path": "files/{fileId}/comments/{commentId}/replies/{replyId}"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.revisions.delete",
+     "path": "files/{fileId}/revisions/{revisionId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.revisions.get",
+     "path": "files/{fileId}/revisions/{revisionId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.revisions.list",
+     "path": "files/{fileId}/revisions"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.revisions.update",
+     "path": "files/{fileId}/revisions/{revisionId}"
+    },
+    {
+     "http": "POST",
+     "id": "drive.teamdrives.create",
+     "path": "teamdrives"
+    },
+    {
+     "http": "DELETE",
+     "id": "drive.teamdrives.delete",
+     "path": "teamdrives/{teamDriveId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.teamdrives.get",
+     "path": "teamdrives/{teamDriveId}"
+    },
+    {
+     "http": "GET",
+     "id": "drive.teamdrives.list",
+     "path": "teamdrives"
+    },
+    {
+     "http": "PATCH",
+     "id": "drive.teamdrives.update",
+     "path": "teamdrives/{teamDriveId}"
+    }
+   ],
+   "revision": "20261117",
+   "version": "v3"
+  },
+  "gmail": {
+   "base_url": "https://gmail.googleapis.com/",
+   "discovery_url": "https://gmail.googleapis.com/$discovery/rest?version=v1",
+   "label": "Gmail",
+   "methods": [
+    {
+     "http": "POST",
+     "id": "gmail.users.drafts.create",
+     "path": "gmail/v1/users/{userId}/drafts"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.drafts.delete",
+     "path": "gmail/v1/users/{userId}/drafts/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.drafts.get",
+     "path": "gmail/v1/users/{userId}/drafts/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.drafts.list",
+     "path": "gmail/v1/users/{userId}/drafts"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.drafts.send",
+     "path": "gmail/v1/users/{userId}/drafts/send"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.drafts.update",
+     "path": "gmail/v1/users/{userId}/drafts/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.getProfile",
+     "path": "gmail/v1/users/{userId}/profile"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.history.list",
+     "path": "gmail/v1/users/{userId}/history"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.labels.create",
+     "path": "gmail/v1/users/{userId}/labels"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.labels.delete",
+     "path": "gmail/v1/users/{userId}/labels/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.labels.get",
+     "path": "gmail/v1/users/{userId}/labels/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.labels.list",
+     "path": "gmail/v1/users/{userId}/labels"
+    },
+    {
+     "http": "PATCH",
+     "id": "gmail.users.labels.patch",
+     "path": "gmail/v1/users/{userId}/labels/{id}"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.labels.update",
+     "path": "gmail/v1/users/{userId}/labels/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.messages.attachments.get",
+     "path": "gmail/v1/users/{userId}/messages/{messageId}/attachments/{id}"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.batchDelete",
+     "path": "gmail/v1/users/{userId}/messages/batchDelete"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.batchModify",
+     "path": "gmail/v1/users/{userId}/messages/batchModify"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.messages.delete",
+     "path": "gmail/v1/users/{userId}/messages/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.messages.get",
+     "path": "gmail/v1/users/{userId}/messages/{id}"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.import",
+     "path": "gmail/v1/users/{userId}/messages/import"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.insert",
+     "path": "gmail/v1/users/{userId}/messages"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.messages.list",
+     "path": "gmail/v1/users/{userId}/messages"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.modify",
+     "path": "gmail/v1/users/{userId}/messages/{id}/modify"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.send",
+     "path": "gmail/v1/users/{userId}/messages/send"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.trash",
+     "path": "gmail/v1/users/{userId}/messages/{id}/trash"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.messages.untrash",
+     "path": "gmail/v1/users/{userId}/messages/{id}/untrash"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.cse.identities.create",
+     "path": "gmail/v1/users/{userId}/settings/cse/identities"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.cse.identities.delete",
+     "path": "gmail/v1/users/{userId}/settings/cse/identities/{cseEmailAddress}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.cse.identities.get",
+     "path": "gmail/v1/users/{userId}/settings/cse/identities/{cseEmailAddress}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.cse.identities.list",
+     "path": "gmail/v1/users/{userId}/settings/cse/identities"
+    },
+    {
+     "http": "PATCH",
+     "id": "gmail.users.settings.cse.identities.patch",
+     "path": "gmail/v1/users/{userId}/settings/cse/identities/{emailAddress}"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.cse.keypairs.create",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.cse.keypairs.disable",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:disable"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.cse.keypairs.enable",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:enable"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.cse.keypairs.get",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.cse.keypairs.list",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.cse.keypairs.obliterate",
+     "path": "gmail/v1/users/{userId}/settings/cse/keypairs/{keyPairId}:obliterate"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.delegates.create",
+     "path": "gmail/v1/users/{userId}/settings/delegates"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.delegates.delete",
+     "path": "gmail/v1/users/{userId}/settings/delegates/{delegateEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.delegates.get",
+     "path": "gmail/v1/users/{userId}/settings/delegates/{delegateEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.delegates.list",
+     "path": "gmail/v1/users/{userId}/settings/delegates"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.filters.create",
+     "path": "gmail/v1/users/{userId}/settings/filters"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.filters.delete",
+     "path": "gmail/v1/users/{userId}/settings/filters/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.filters.get",
+     "path": "gmail/v1/users/{userId}/settings/filters/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.filters.list",
+     "path": "gmail/v1/users/{userId}/settings/filters"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.forwardingAddresses.create",
+     "path": "gmail/v1/users/{userId}/settings/forwardingAddresses"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.forwardingAddresses.delete",
+     "path": "gmail/v1/users/{userId}/settings/forwardingAddresses/{forwardingEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.forwardingAddresses.get",
+     "path": "gmail/v1/users/{userId}/settings/forwardingAddresses/{forwardingEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.forwardingAddresses.list",
+     "path": "gmail/v1/users/{userId}/settings/forwardingAddresses"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.getAutoForwarding",
+     "path": "gmail/v1/users/{userId}/settings/autoForwarding"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.getImap",
+     "path": "gmail/v1/users/{userId}/settings/imap"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.getLanguage",
+     "path": "gmail/v1/users/{userId}/settings/language"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.getPop",
+     "path": "gmail/v1/users/{userId}/settings/pop"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.getVacation",
+     "path": "gmail/v1/users/{userId}/settings/vacation"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.sendAs.create",
+     "path": "gmail/v1/users/{userId}/settings/sendAs"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.sendAs.delete",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.sendAs.get",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.sendAs.list",
+     "path": "gmail/v1/users/{userId}/settings/sendAs"
+    },
+    {
+     "http": "PATCH",
+     "id": "gmail.users.settings.sendAs.patch",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.settings.sendAs.smimeInfo.delete",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.sendAs.smimeInfo.get",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.sendAs.smimeInfo.insert",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.settings.sendAs.smimeInfo.list",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.sendAs.smimeInfo.setDefault",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/smimeInfo/{id}/setDefault"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.sendAs.update",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.settings.sendAs.verify",
+     "path": "gmail/v1/users/{userId}/settings/sendAs/{sendAsEmail}/verify"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.updateAutoForwarding",
+     "path": "gmail/v1/users/{userId}/settings/autoForwarding"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.updateImap",
+     "path": "gmail/v1/users/{userId}/settings/imap"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.updateLanguage",
+     "path": "gmail/v1/users/{userId}/settings/language"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.updatePop",
+     "path": "gmail/v1/users/{userId}/settings/pop"
+    },
+    {
+     "http": "PUT",
+     "id": "gmail.users.settings.updateVacation",
+     "path": "gmail/v1/users/{userId}/settings/vacation"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.stop",
+     "path": "gmail/v1/users/{userId}/stop"
+    },
+    {
+     "http": "DELETE",
+     "id": "gmail.users.threads.delete",
+     "path": "gmail/v1/users/{userId}/threads/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.threads.get",
+     "path": "gmail/v1/users/{userId}/threads/{id}"
+    },
+    {
+     "http": "GET",
+     "id": "gmail.users.threads.list",
+     "path": "gmail/v1/users/{userId}/threads"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.threads.modify",
+     "path": "gmail/v1/users/{userId}/threads/{id}/modify"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.threads.trash",
+     "path": "gmail/v1/users/{userId}/threads/{id}/trash"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.threads.untrash",
+     "path": "gmail/v1/users/{userId}/threads/{id}/untrash"
+    },
+    {
+     "http": "POST",
+     "id": "gmail.users.watch",
+     "path": "gmail/v1/users/{userId}/watch"
+    }
+   ],
+   "revision": "20261116",
+   "version": "v1"
+  },
+  "keep": {
+   "base_url": "https://keep.googleapis.com/",
+   "discovery_url": "https://keep.googleapis.com/$discovery/rest?version=v1",
+   "label": "Keep",
+   "methods": [
+    {
+     "http": "GET",
+     "id": "keep.media.download",
+     "path": "v1/notes/{notesId}/attachments/{attachmentsId}"
+    },
+    {
+     "http": "POST",
+     "id": "keep.notes.create",
+     "path": "v1/notes"
+    },
+    {
+     "http": "DELETE",
+     "id": "keep.notes.delete",
+     "path": "v1/notes/{notesId}"
+    },
+    {
+     "http": "GET",
+     "id": "keep.notes.get",
+     "path": "v1/notes/{notesId}"
+    },
+    {
+     "http": "GET",
+     "id": "keep.notes.list",
+     "path": "v1/notes"
+    },
+    {
+     "http": "POST",
+     "id": "keep.notes.permissions.batchCreate",
+     "path": "v1/notes/{notesId}/permissions:batchCreate"
+    },
+    {
+     "http": "POST",
+     "id": "keep.notes.permissions.batchDelete",
+     "path": "v1/notes/{notesId}/permissions:batchDelete"
+    }
+   ],
+   "revision": "20261116",
+   "version": "v1"
+  },
+  "people": {
+   "base_url": "https://people.googleapis.com/",
+   "discovery_url": "https://people.googleapis.com/$discovery/rest?version=v1",
+   "label": "People",
+   "methods": [
+    {
+     "http": "GET",
+     "id": "people.contactGroups.batchGet",
+     "path": "v1/contactGroups:batchGet"
+    },
+    {
+     "http": "POST",
+     "id": "people.contactGroups.create",
+     "path": "v1/contactGroups"
+    },
+    {
+     "http": "DELETE",
+     "id": "people.contactGroups.delete",
+     "path": "v1/contactGroups/{contactGroupsId}"
+    },
+    {
+     "http": "GET",
+     "id": "people.contactGroups.get",
+     "path": "v1/contactGroups/{contactGroupsId}"
+    },
+    {
+     "http": "GET",
+     "id": "people.contactGroups.list",
+     "path": "v1/contactGroups"
+    },
+    {
+     "http": "POST",
+     "id": "people.contactGroups.members.modify",
+     "path": "v1/contactGroups/{contactGroupsId}/members:modify"
+    },
+    {
+     "http": "PUT",
+     "id": "people.contactGroups.update",
+     "path": "v1/contactGroups/{contactGroupsId}"
+    },
+    {
+     "http": "POST",
+     "id": "people.otherContacts.copyOtherContactToMyContactsGroup",
+     "path": "v1/otherContacts/{otherContactsId}:copyOtherContactToMyContactsGroup"
+    },
+    {
+     "http": "GET",
+     "id": "people.otherContacts.list",
+     "path": "v1/otherContacts"
+    },
+    {
+     "http": "GET",
+     "id": "people.otherContacts.search",
+     "path": "v1/otherContacts:search"
+    },
+    {
+     "http": "POST",
+     "id": "people.people.batchCreateContacts",
+     "path": "v1/people:batchCreateContacts"
+    },
+    {
+     "http": "POST",
+     "id": "people.people.batchDeleteContacts",
+     "path": "v1/people:batchDeleteContacts"
+    },
+    {
+     "http": "POST",
+     "id": "people.people.batchUpdateContacts",
+     "path": "v1/people:batchUpdateContacts"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.connections.list",
+     "path": "v1/people/{peopleId}/connections"
+    },
+    {
+     "http": "POST",
+     "id": "people.people.createContact",
+     "path": "v1/people:createContact"
+    },
+    {
+     "http": "DELETE",
+     "id": "people.people.deleteContact",
+     "path": "v1/people/{peopleId}:deleteContact"
+    },
+    {
+     "http": "DELETE",
+     "id": "people.people.deleteContactPhoto",
+     "path": "v1/people/{peopleId}:deleteContactPhoto"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.get",
+     "path": "v1/people/{peopleId}"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.getBatchGet",
+     "path": "v1/people:batchGet"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.listDirectoryPeople",
+     "path": "v1/people:listDirectoryPeople"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.searchContacts",
+     "path": "v1/people:searchContacts"
+    },
+    {
+     "http": "GET",
+     "id": "people.people.searchDirectoryPeople",
+     "path": "v1/people:searchDirectoryPeople"
+    },
+    {
+     "http": "PATCH",
+     "id": "people.people.updateContact",
+     "path": "v1/people/{peopleId}:updateContact"
+    },
+    {
+     "http": "PATCH",
+     "id": "people.people.updateContactPhoto",
+     "path": "v1/people/{peopleId}:updateContactPhoto"
+    }
+   ],
+   "revision": "20261122",
+   "version": "v1"
+  },
+  "sheets": {
+   "base_url": "https://sheets.googleapis.com/",
+   "discovery_url": "https://sheets.googleapis.com/$discovery/rest?version=v4",
+   "label": "Sheets",
+   "methods": [
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.batchUpdate",
+     "path": "v4/spreadsheets/{spreadsheetId}:batchUpdate"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.create",
+     "path": "v4/spreadsheets"
+    },
+    {
+     "http": "GET",
+     "id": "sheets.spreadsheets.developerMetadata.get",
+     "path": "v4/spreadsheets/{spreadsheetId}/developerMetadata/{metadataId}"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.developerMetadata.search",
+     "path": "v4/spreadsheets/{spreadsheetId}/developerMetadata:search"
+    },
+    {
+     "http": "GET",
+     "id": "sheets.spreadsheets.get",
+     "path": "v4/spreadsheets/{spreadsheetId}"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.getByDataFilter",
+     "path": "v4/spreadsheets/{spreadsheetId}:getByDataFilter"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.sheets.copyTo",
+     "path": "v4/spreadsheets/{spreadsheetId}/sheets/{sheetId}:copyTo"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.append",
+     "path": "v4/spreadsheets/{spreadsheetId}/values/{range}:append"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.batchClear",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchClear"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.batchClearByDataFilter",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchClearByDataFilter"
+    },
+    {
+     "http": "GET",
+     "id": "sheets.spreadsheets.values.batchGet",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchGet"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.batchGetByDataFilter",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchGetByDataFilter"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.batchUpdate",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchUpdate"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.batchUpdateByDataFilter",
+     "path": "v4/spreadsheets/{spreadsheetId}/values:batchUpdateByDataFilter"
+    },
+    {
+     "http": "POST",
+     "id": "sheets.spreadsheets.values.clear",
+     "path": "v4/spreadsheets/{spreadsheetId}/values/{range}:clear"
+    },
+    {
+     "http": "GET",
+     "id": "sheets.spreadsheets.values.get",
+     "path": "v4/spreadsheets/{spreadsheetId}/values/{range}"
+    },
+    {
+     "http": "PUT",
+     "id": "sheets.spreadsheets.values.update",
+     "path": "v4/spreadsheets/{spreadsheetId}/values/{range}"
+    }
+   ],
+   "revision": "20261118",
+   "version": "v4"
+  },
+  "slides": {
+   "base_url": "https://slides.googleapis.com/",
+   "discovery_url": "https://slides.googleapis.com/$discovery/rest?version=v1",
+   "label": "Slides",
+   "methods": [
+    {
+     "http": "POST",
+     "id": "slides.presentations.batchUpdate",
+     "path": "v1/presentations/{presentationId}:batchUpdate"
+    },
+    {
+     "http": "POST",
+     "id": "slides.presentations.create",
+     "path": "v1/presentations"
+    },
+    {
+     "http": "GET",
+     "id": "slides.presentations.get",
+     "path": "v1/presentations/{presentationsId}"
+    },
+    {
+     "http": "GET",
+     "id": "slides.presentations.pages.get",
+     "path": "v1/presentations/{presentationId}/pages/{pageObjectId}"
+    },
+    {
+     "http": "GET",
+     "id": "slides.presentations.pages.getThumbnail",
+     "path": "v1/presentations/{presentationId}/pages/{pageObjectId}/thumbnail"
+    }
+   ],
+   "revision": "20261118",
+   "version": "v1"
+  },
+  "tasks": {
+   "base_url": "https://tasks.googleapis.com/",
+   "discovery_url": "https://tasks.googleapis.com/$discovery/rest?version=v1",
+   "label": "Tasks",
+   "methods": [
+    {
+     "http": "DELETE",
+     "id": "tasks.tasklists.delete",
+     "path": "tasks/v1/users/@me/lists/{tasklist}"
+    },
+    {
+     "http": "GET",
+     "id": "tasks.tasklists.get",
+     "path": "tasks/v1/users/@me/lists/{tasklist}"
+    },
+    {
+     "http": "POST",
+     "id": "tasks.tasklists.insert",
+     "path": "tasks/v1/users/@me/lists"
+    },
+    {
+     "http": "GET",
+     "id": "tasks.tasklists.list",
+     "path": "tasks/v1/users/@me/lists"
+    },
+    {
+     "http": "PATCH",
+     "id": "tasks.tasklists.patch",
+     "path": "tasks/v1/users/@me/lists/{tasklist}"
+    },
+    {
+     "http": "PUT",
+     "id": "tasks.tasklists.update",
+     "path": "tasks/v1/users/@me/lists/{tasklist}"
+    },
+    {
+     "http": "POST",
+     "id": "tasks.tasks.clear",
+     "path": "tasks/v1/lists/{tasklist}/clear"
+    },
+    {
+     "http": "DELETE",
+     "id": "tasks.tasks.delete",
+     "path": "tasks/v1/lists/{tasklist}/tasks/{task}"
+    },
+    {
+     "http": "GET",
+     "id": "tasks.tasks.get",
+     "path": "tasks/v1/lists/{tasklist}/tasks/{task}"
+    },
+    {
+     "http": "POST",
+     "id": "tasks.tasks.insert",
+     "path": "tasks/v1/lists/{tasklist}/tasks"
+    },
+    {
+     "http": "GET",
+     "id": "tasks.tasks.list",
+     "path": "tasks/v1/lists/{tasklist}/tasks"
+    },
+    {
+     "http": "POST",
+     "id": "tasks.tasks.move",
+     "path": "tasks/v1/lists/{tasklist}/tasks/{task}/move"
+    },
+    {
+     "http": "PATCH",
+     "id": "tasks.tasks.patch",
+     "path": "tasks/v1/lists/{tasklist}/tasks/{task}"
+    },
+    {
+     "http": "PUT",
+     "id": "tasks.tasks.update",
+     "path": "tasks/v1/lists/{tasklist}/tasks/{task}"
+    }
+   ],
+   "revision": "20261117",
+   "version": "v1"
+  }
+ }
+}
